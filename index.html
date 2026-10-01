@@ -337,6 +337,42 @@
     <div class="btn-group"><button class="btn btn-ghost" onclick="clearSLAFilters()">Clear</button></div>
   </div>
 
+  <!-- SLA Date Range Filter -->
+  <div class="panel" style="margin-bottom:18px;">
+    <div class="panel-head"><div class="section-title"><span></span>Filter by Date Range</div></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
+      <div class="filter-group">
+        <label>Date Field</label>
+        <select id="sfDateField">
+          <option value="closed">Closed Date</option>
+          <option value="end_dev">End of Development</option>
+          <option value="rdm">RDM Date</option>
+          <option value="submission">Scan Submission</option>
+        </select>
+      </div>
+      <div class="filter-group"><label>From</label><input type="date" id="sfDateFrom" /></div>
+      <div class="filter-group"><label>To</label>  <input type="date" id="sfDateTo"   /></div>
+      <div class="filter-group">
+        <label>Quick Range</label>
+        <select id="sfQuickRange" onchange="applySLAQuickRange()">
+          <option value="">Custom</option>
+          <option value="7">Last 7 days</option>
+          <option value="30">Last 30 days</option>
+          <option value="90">Last 90 days</option>
+          <option value="mtd">Month to date</option>
+          <option value="ytd">Year to date</option>
+          <option value="all">All time</option>
+        </select>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="applySLAFilters()">Apply</button>
+        <button class="btn btn-ghost"   onclick="clearSLADateRange()">Clear Dates</button>
+      </div>
+      <!-- live result count -->
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-left:8px;" id="slaDateStats"></div>
+    </div>
+  </div>
+
   <!-- Charts row -->
   <div class="two-col">
 
@@ -450,7 +486,9 @@ function init() {
 
   // SLA listeners
   document.getElementById('sfSearch').addEventListener('input', debounce(applySLAFilters, 200));
-  ['sfSLA','sfComment','sfLoc','sfPri','sfAnalyst'].forEach(id =>
+  ['sfSLA','sfComment','sfLoc','sfPri','sfAnalyst','sfDateField'].forEach(id =>
+    document.getElementById(id).addEventListener('change', applySLAFilters));
+  ['sfDateFrom','sfDateTo'].forEach(id =>
     document.getElementById(id).addEventListener('change', applySLAFilters));
 
   applyFilters();
@@ -576,12 +614,15 @@ function slaStatus(r) {
 }
 
 function applySLAFilters() {
-  const s   = ge('sfSearch').value.toLowerCase();
-  const sla = ge('sfSLA').value;
-  const cmt = ge('sfComment').value;
-  const loc = ge('sfLoc').value;
-  const pri = ge('sfPri').value;
-  const ana = ge('sfAnalyst').value;
+  const s        = ge('sfSearch').value.toLowerCase();
+  const sla      = ge('sfSLA').value;
+  const cmt      = ge('sfComment').value;
+  const loc      = ge('sfLoc').value;
+  const pri      = ge('sfPri').value;
+  const ana      = ge('sfAnalyst').value;
+  const dateField= ge('sfDateField').value;
+  const dateFrom = ge('sfDateFrom').value || null;
+  const dateTo   = ge('sfDateTo').value   || null;
 
   slaFiltered = ALL_DATA.filter(r => {
     if (s   && !r.program.toLowerCase().includes(s)) return false;
@@ -595,14 +636,58 @@ function applySLAFilters() {
       if (cmt === '(no comment)') { if (r.comments) return false; }
       else if (rc !== cmt) return false;
     }
+    // Date range filter
+    if (dateFrom || dateTo) {
+      const dv = r[dateField];
+      if (!dv) return false;
+      if (dateFrom && dv < dateFrom) return false;
+      if (dateTo   && dv > dateTo)   return false;
+    }
     return true;
   });
+
+  // Update date stats summary
+  if (dateFrom || dateTo) {
+    const within = slaFiltered.filter(r => slaStatus(r) === 'within').length;
+    const breach = slaFiltered.filter(r => slaStatus(r) === 'breach').length;
+    const fieldLabel = {'closed':'Closed Date','end_dev':'End Dev','rdm':'RDM','submission':'Submission'}[dateField] || dateField;
+    ge('slaDateStats').innerHTML = `
+      <span style="font-size:12px;color:var(--muted);">${fieldLabel}: <strong style="color:var(--text)">${dateFrom||'any'}</strong> &rarr; <strong style="color:var(--text)">${dateTo||'any'}</strong></span>
+      <span style="font-size:13px;font-weight:700;color:#4ade80;">${within} Within</span>
+      <span style="font-size:13px;font-weight:700;color:#f87171;">${breach} Breached</span>
+      <span style="font-size:12px;color:var(--muted);">${slaFiltered.length} total</span>`;
+  } else {
+    ge('slaDateStats').innerHTML = '';
+  }
+
   sPage = 1; sortSLAData();
   renderSLAKPIs(); renderSLATable(); renderSLAReasonChart(); renderSLALocChart(); renderSLAAnalystChart();
 }
 
 function clearSLAFilters() {
   ['sfSearch','sfSLA','sfComment','sfLoc','sfPri','sfAnalyst'].forEach(id => ge(id).value='');
+  clearSLADateRange();
+}
+
+function clearSLADateRange() {
+  ge('sfDateFrom').value = '';
+  ge('sfDateTo').value   = '';
+  ge('sfQuickRange').value = '';
+  ge('slaDateStats').innerHTML = '';
+  applySLAFilters();
+}
+
+function applySLAQuickRange() {
+  const today = new Date(), qr = ge('sfQuickRange').value;
+  const fmt = d => d.toISOString().split('T')[0], to = fmt(today);
+  if (!qr) { ge('sfDateFrom').value = ge('sfDateTo').value = ''; applySLAFilters(); return; }
+  let from;
+  if      (qr === 'all') { from = '2010-01-01'; }
+  else if (qr === 'mtd') { from = fmt(new Date(today.getFullYear(), today.getMonth(), 1)); }
+  else if (qr === 'ytd') { from = fmt(new Date(today.getFullYear(), 0, 1)); }
+  else { const d = new Date(today); d.setDate(d.getDate() - parseInt(qr)); from = fmt(d); }
+  ge('sfDateFrom').value = from;
+  ge('sfDateTo').value   = to;
   applySLAFilters();
 }
 
