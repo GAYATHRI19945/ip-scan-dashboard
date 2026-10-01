@@ -5,123 +5,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Global IP Scan Dashboard</title>
 <style>
-  /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --bg:       #0f1117;
-    --surface:  #1a1d27;
-    --card:     #21253a;
-    --border:   #2e3348;
-    --accent:   #4f6ef7;
-    --accent2:  #7c3aed;
-    --green:    #22c55e;
-    --yellow:   #eab308;
-    --red:      #ef4444;
-    --orange:   #f97316;
-    --sky:      #38bdf8;
-    --text:     #e2e8f0;
-    --muted:    #64748b;
-    --radius:   12px;
+    --bg:      #0f1117;
+    --surface: #1a1d27;
+    --card:    #21253a;
+    --border:  #2e3348;
+    --accent:  #4f6ef7;
+    --accent2: #7c3aed;
+    --green:   #22c55e;
+    --yellow:  #eab308;
+    --red:     #ef4444;
+    --orange:  #f97316;
+    --sky:     #38bdf8;
+    --text:    #e2e8f0;
+    --muted:   #64748b;
+    --radius:  12px;
   }
   body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; min-height: 100vh; }
 
   /* ── Header ── */
-  .header { background: linear-gradient(135deg, #1a1d27 0%, #1e2238 100%); border-bottom: 1px solid var(--border); padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .header { background: linear-gradient(135deg,#1a1d27 0%,#1e2238 100%); border-bottom: 1px solid var(--border); padding: 16px 28px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   .header-left h1 { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -.3px; }
-  .header-left p  { font-size: 12px; color: var(--muted); margin-top: 3px; }
-  .header-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .header-left p  { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .header-right   { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .badge { font-size: 11px; padding: 4px 10px; border-radius: 20px; font-weight: 600; }
-  .badge-total   { background: rgba(79,110,247,.18); color: #818cf8; border: 1px solid rgba(79,110,247,.3); }
-  .badge-live    { background: rgba(34,197,94,.12); color: #4ade80; border: 1px solid rgba(34,197,94,.25); }
+  .badge-total { background: rgba(79,110,247,.18); color: #818cf8; border: 1px solid rgba(79,110,247,.3); }
+  .badge-live  { background: rgba(34,197,94,.12);  color: #4ade80; border: 1px solid rgba(34,197,94,.25); }
 
-  /* ── Layout ── */
+  /* ── Tab Nav ── */
+  .tab-nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; gap: 0; }
+  .tab-btn { padding: 13px 22px; font-size: 13px; font-weight: 600; color: var(--muted); border: none; background: transparent; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -1px; transition: color .15s, border-color .15s; letter-spacing: .2px; }
+  .tab-btn:hover  { color: var(--text); }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  /* ── Main ── */
   .main { padding: 20px 24px; }
 
   /* ── KPI Cards ── */
-  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 20px; }
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px,1fr)); gap: 14px; margin-bottom: 20px; }
   .kpi { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; position: relative; overflow: hidden; }
-  .kpi::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 3px; border-radius: var(--radius) var(--radius) 0 0; }
-  .kpi.backlog::before  { background: var(--muted); }
-  .kpi.inprog::before   { background: var(--accent); }
-  .kpi.done::before     { background: var(--green); }
-  .kpi.cancel::before   { background: var(--red); }
-  .kpi.total::before    { background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+  .kpi::before { content:''; position: absolute; inset: 0 0 auto 0; height: 3px; border-radius: var(--radius) var(--radius) 0 0; }
+  .kpi.total::before   { background: linear-gradient(90deg,var(--accent),var(--accent2)); }
+  .kpi.inprog::before  { background: var(--accent); }
+  .kpi.done::before    { background: var(--green); }
+  .kpi.backlog::before { background: var(--muted); }
+  .kpi.cancel::before  { background: var(--red); }
+  .kpi.within::before  { background: var(--green); }
+  .kpi.breach::before  { background: var(--red); }
+  .kpi.nodata::before  { background: var(--muted); }
+  .kpi.avg::before     { background: var(--yellow); }
   .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; }
   .kpi-num   { font-size: 32px; font-weight: 800; margin: 6px 0 2px; line-height: 1; }
-  .kpi.backlog .kpi-num { color: #94a3b8; }
-  .kpi.inprog  .kpi-num { color: var(--accent); }
-  .kpi.done    .kpi-num { color: var(--green); }
-  .kpi.cancel  .kpi-num { color: var(--red); }
-  .kpi.total   .kpi-num { color: #fff; }
+  .kpi.total  .kpi-num { color: #fff; }
+  .kpi.inprog .kpi-num { color: var(--accent); }
+  .kpi.done   .kpi-num { color: var(--green); }
+  .kpi.backlog .kpi-num{ color: #94a3b8; }
+  .kpi.cancel .kpi-num { color: var(--red); }
+  .kpi.within .kpi-num { color: var(--green); }
+  .kpi.breach .kpi-num { color: var(--red); }
+  .kpi.nodata .kpi-num { color: var(--muted); }
+  .kpi.avg    .kpi-num { color: var(--yellow); }
   .kpi-sub { font-size: 11px; color: var(--muted); }
 
-  /* ── Section heading ── */
+  /* ── Section title ── */
   .section-title { font-size: 13px; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: .7px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
   .section-title span { width: 4px; height: 16px; border-radius: 2px; display: inline-block; background: var(--accent); }
 
-  /* ── Filters ── */
+  /* ── Filters bar ── */
   .filters-bar { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 18px; display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
-  .filter-group { display: flex; flex-direction: column; gap: 5px; min-width: 140px; }
+  .filter-group { display: flex; flex-direction: column; gap: 5px; min-width: 138px; }
   .filter-group label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-weight: 600; }
   .filter-group select,
   .filter-group input  { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 7px 10px; font-size: 13px; outline: none; width: 100%; }
   .filter-group select:focus,
   .filter-group input:focus { border-color: var(--accent); }
-  .filter-group input[type="date"] { min-width: 155px; }
+  .filter-group input[type=date] { min-width: 150px; }
+  .search-box { flex: 1; min-width: 160px; }
   .btn { padding: 8px 16px; border-radius: 8px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; transition: opacity .15s; }
   .btn:hover { opacity: .85; }
   .btn-primary { background: var(--accent); color: #fff; }
   .btn-ghost   { background: transparent; color: var(--muted); border: 1px solid var(--border); }
   .btn-group   { display: flex; gap: 8px; align-items: flex-end; padding-bottom: 1px; }
 
-  /* ── Date Count Panel ── */
-  .date-count-panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; margin-bottom: 18px; }
-  .date-count-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-  .date-count-stat { text-align: center; }
-  .date-count-stat .big { font-size: 36px; font-weight: 800; color: var(--green); }
-  .date-count-stat .lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  .date-divider { width: 1px; height: 50px; background: var(--border); }
-  .date-breakdown { display: flex; gap: 10px; flex-wrap: wrap; }
-  .db-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; font-size: 12px; display: flex; align-items: center; gap: 6px; }
-  .db-chip .c { font-weight: 700; }
-  .db-chip.ind  .c { color: #a78bfa; }
-  .db-chip.de   .c { color: var(--sky); }
-  .db-chip.glob .c { color: #94a3b8; }
-  .db-chip.vn   .c { color: #34d399; }
-  .db-chip.cn   .c { color: #f87171; }
-
-  /* ── Two-col layout ── */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
-  @media(max-width:900px){ .two-col { grid-template-columns: 1fr; } }
-
-  /* ── In-Progress Table ── */
+  /* ── Panel ── */
   .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
   .panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
   .count-pill { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2px 10px; font-size: 12px; color: var(--muted); }
 
+  /* ── Table ── */
   .tbl-wrap { overflow-x: auto; max-height: 440px; overflow-y: auto; border-radius: 8px; }
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
   thead th { background: var(--surface); color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: .5px; padding: 9px 12px; position: sticky; top: 0; white-space: nowrap; z-index: 1; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; }
   thead th:hover { color: var(--text); }
-  thead th .sort-icon { margin-left: 4px; opacity: .4; font-style: normal; }
-  thead th.asc  .sort-icon::after { content: ' ↑'; opacity: 1; }
-  thead th.desc .sort-icon::after { content: ' ↓'; opacity: 1; }
+  thead th .si { margin-left: 4px; opacity: .4; font-style: normal; }
+  thead th.asc  .si::after { content: ' ↑'; opacity: 1; }
+  thead th.desc .si::after { content: ' ↓'; opacity: 1; }
   tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: rgba(255,255,255,.03); }
   td { padding: 9px 12px; vertical-align: middle; white-space: nowrap; }
   td.wrap { white-space: normal; max-width: 220px; line-height: 1.4; }
+  .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
 
-  /* ── Priority / State badges ── */
+  /* ── Tags ── */
   .tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; }
-  .tag-p1   { background: rgba(239,68,68,.15);  color: #f87171; border: 1px solid rgba(239,68,68,.3); }
-  .tag-p2   { background: rgba(234,179,8,.13);  color: #fbbf24; border: 1px solid rgba(234,179,8,.3); }
-  .tag-p3   { background: rgba(100,116,139,.15);color: #94a3b8; border: 1px solid rgba(100,116,139,.3); }
-  .tag-backlog  { background: rgba(100,116,139,.15);color: #94a3b8; }
-  .tag-inprog   { background: rgba(79,110,247,.15); color: #818cf8; }
-  .tag-done     { background: rgba(34,197,94,.13);  color: #4ade80; }
-  .tag-cancel   { background: rgba(239,68,68,.13);  color: #f87171; }
-  .tag-loc { background: rgba(56,189,248,.1); color: var(--sky); border: 1px solid rgba(56,189,248,.2); }
+  .tag-p1      { background: rgba(239,68,68,.15);  color: #f87171; border: 1px solid rgba(239,68,68,.3); }
+  .tag-p2      { background: rgba(234,179,8,.13);  color: #fbbf24; border: 1px solid rgba(234,179,8,.3); }
+  .tag-p3      { background: rgba(100,116,139,.15);color: #94a3b8; border: 1px solid rgba(100,116,139,.3); }
+  .tag-backlog { background: rgba(100,116,139,.15);color: #94a3b8; }
+  .tag-inprog  { background: rgba(79,110,247,.15); color: #818cf8; }
+  .tag-done    { background: rgba(34,197,94,.13);  color: #4ade80; }
+  .tag-cancel  { background: rgba(239,68,68,.13);  color: #f87171; }
+  .tag-loc     { background: rgba(56,189,248,.1);  color: var(--sky); border: 1px solid rgba(56,189,248,.2); }
+  .tag-within  { background: rgba(34,197,94,.15);  color: #4ade80; border: 1px solid rgba(34,197,94,.3); }
+  .tag-breach  { background: rgba(239,68,68,.15);  color: #f87171; border: 1px solid rgba(239,68,68,.3); }
+  .tag-ontime  { background: rgba(234,179,8,.13);  color: #fbbf24; border: 1px solid rgba(234,179,8,.3); }
 
   /* ── Bar chart ── */
   .bar-list { display: flex; flex-direction: column; gap: 8px; }
@@ -131,25 +132,48 @@
   .bar-fill  { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 11px; font-weight: 700; color: #fff; min-width: 28px; transition: width .4s ease; }
   .bar-count { font-size: 12px; color: var(--muted); min-width: 30px; text-align: right; }
 
-  /* ── Completed by date chart ── */
+  /* ── Date count ── */
+  .date-count-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .date-count-stat .big { font-size: 36px; font-weight: 800; color: var(--green); }
+  .date-count-stat .lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .date-divider { width: 1px; height: 50px; background: var(--border); }
+  .date-breakdown { display: flex; gap: 10px; flex-wrap: wrap; }
+  .db-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; font-size: 12px; display: flex; align-items: center; gap: 6px; }
+  .db-chip .c { font-weight: 700; }
+  .db-chip.ind .c  { color: #a78bfa; }
+  .db-chip.de  .c  { color: var(--sky); }
+  .db-chip.glob .c { color: #94a3b8; }
+  .db-chip.vn  .c  { color: #34d399; }
+  .db-chip.cn  .c  { color: #f87171; }
+
+  /* ── Daily chart ── */
   .daily-chart { display: flex; gap: 5px; align-items: flex-end; height: 120px; padding: 0 4px; overflow-x: auto; }
-  .day-col  { display: flex; flex-direction: column; align-items: center; gap: 3px; flex-shrink: 0; }
-  .day-bar  { width: 28px; background: var(--accent); border-radius: 4px 4px 0 0; transition: opacity .15s; cursor: pointer; }
+  .day-col { display: flex; flex-direction: column; align-items: center; gap: 3px; flex-shrink: 0; }
+  .day-bar { width: 28px; background: var(--accent); border-radius: 4px 4px 0 0; cursor: pointer; }
   .day-bar:hover { opacity: .75; }
-  .day-lbl  { font-size: 9px; color: var(--muted); writing-mode: vertical-rl; transform: rotate(180deg); height: 42px; display: flex; align-items: flex-start; }
-  .day-num  { font-size: 10px; color: var(--muted); }
+  .day-lbl { font-size: 9px; color: var(--muted); writing-mode: vertical-rl; transform: rotate(180deg); height: 42px; display: flex; align-items: flex-start; }
+  .day-num { font-size: 10px; color: var(--muted); }
 
-  /* ── Empty state ── */
-  .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
+  /* ── SLA stacked bar ── */
+  .sla-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .sla-label  { font-size: 12px; color: var(--muted); min-width: 160px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sla-track  { flex: 1; background: var(--surface); border-radius: 4px; height: 22px; display: flex; overflow: hidden; }
+  .sla-seg-w  { background: #22c55e; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; overflow: hidden; transition: width .4s; }
+  .sla-seg-b  { background: #ef4444; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; overflow: hidden; transition: width .4s; }
+  .sla-totals { font-size: 11px; color: var(--muted); min-width: 50px; text-align: right; }
 
-  /* ── Tooltip ── */
-  [data-tip] { position: relative; }
-  [data-tip]:hover::after { content: attr(data-tip); position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #000; color: #fff; font-size: 11px; padding: 4px 8px; border-radius: 6px; white-space: nowrap; z-index: 99; pointer-events: none; margin-bottom: 4px; }
+  /* ── SLA donut ── */
+  .donut-wrap { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .donut-svg  { flex-shrink: 0; }
+  .donut-legend { display: flex; flex-direction: column; gap: 8px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .legend-dot  { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
 
-  /* ── Search box ── */
-  .search-box { flex: 1; min-width: 160px; }
+  /* ── Two-col ── */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+  @media(max-width:900px){ .two-col { grid-template-columns: 1fr; } }
 
-  /* ── Pagination ── */
+  /* ── Pager ── */
   .pager { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-top: 10px; font-size: 12px; color: var(--muted); }
   .pager button { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
   .pager button:disabled { opacity: .35; cursor: default; }
@@ -162,541 +186,565 @@
 </head>
 <body>
 
-<!-- ─── HEADER ─── -->
+<!-- ── HEADER ── -->
 <header class="header">
   <div class="header-left">
-    <h1>🔍 Global IP Scan Dashboard</h1>
-    <p>Active Scans · Kanban Board</p>
+    <h1>&#128269; Global IP Scan Dashboard</h1>
+    <p>Active Scans &middot; Kanban Board</p>
   </div>
   <div class="header-right">
     <span class="badge badge-total" id="totalBadge">432 Total</span>
-    <span class="badge badge-live" id="filteredBadge">— Showing</span>
+    <span class="badge badge-live"  id="filteredBadge">- Showing</span>
   </div>
 </header>
 
+<!-- ── TABS ── -->
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('overview', this)">&#128200; Overview</button>
+  <button class="tab-btn"        onclick="switchTab('sla',      this)">&#9989; SLA Analysis</button>
+</nav>
+
+<!-- ══════════════ TAB 1 : OVERVIEW ══════════════ -->
+<div id="tab-overview" class="tab-pane active">
 <div class="main">
 
-  <!-- ─── KPI CARDS ─── -->
+  <!-- KPI row -->
   <div class="kpi-row">
-    <div class="kpi total">
-      <div class="kpi-label">Total Scans</div>
-      <div class="kpi-num" id="kpiTotal">—</div>
-      <div class="kpi-sub">All records loaded</div>
-    </div>
-    <div class="kpi inprog">
-      <div class="kpi-label">In Progress</div>
-      <div class="kpi-num" id="kpiInProg">—</div>
-      <div class="kpi-sub">Currently active</div>
-    </div>
-    <div class="kpi done">
-      <div class="kpi-label">Completed</div>
-      <div class="kpi-num" id="kpiDone">—</div>
-      <div class="kpi-sub">FOSS scan closed</div>
-    </div>
-    <div class="kpi backlog">
-      <div class="kpi-label">Backlog</div>
-      <div class="kpi-num" id="kpiBacklog">—</div>
-      <div class="kpi-sub">Pending start</div>
-    </div>
-    <div class="kpi cancel">
-      <div class="kpi-label">Cancelled</div>
-      <div class="kpi-num" id="kpiCancel">—</div>
-      <div class="kpi-sub">Not proceeding</div>
-    </div>
+    <div class="kpi total">   <div class="kpi-label">Total Scans</div>  <div class="kpi-num" id="kpiTotal">-</div>   <div class="kpi-sub">All records</div></div>
+    <div class="kpi inprog">  <div class="kpi-label">In Progress</div>  <div class="kpi-num" id="kpiInProg">-</div>  <div class="kpi-sub">Currently active</div></div>
+    <div class="kpi done">    <div class="kpi-label">Completed</div>    <div class="kpi-num" id="kpiDone">-</div>    <div class="kpi-sub">FOSS scan closed</div></div>
+    <div class="kpi backlog"> <div class="kpi-label">Backlog</div>      <div class="kpi-num" id="kpiBacklog">-</div> <div class="kpi-sub">Pending start</div></div>
+    <div class="kpi cancel">  <div class="kpi-label">Cancelled</div>    <div class="kpi-num" id="kpiCancel">-</div>  <div class="kpi-sub">Not proceeding</div></div>
   </div>
 
-  <!-- ─── FILTER BAR ─── -->
+  <!-- Filters -->
   <div class="filters-bar">
-    <div class="filter-group search-box">
-      <label>Search Program</label>
-      <input type="text" id="fSearch" placeholder="Type program name..." />
-    </div>
-    <div class="filter-group">
-      <label>State</label>
-      <select id="fState">
-        <option value="">All States</option>
-        <option value="In Progress">In Progress</option>
-        <option value="Backlog">Backlog</option>
-        <option value="Done">Done</option>
-        <option value="Cancelled">Cancelled</option>
-      </select>
-    </div>
-    <div class="filter-group">
-      <label>Priority</label>
-      <select id="fPriority">
-        <option value="">All Priorities</option>
-        <option value="P1">P1 - Critical</option>
-        <option value="P2">P2 - High</option>
-        <option value="P3">P3 - Normal</option>
-      </select>
-    </div>
-    <div class="filter-group">
-      <label>Location</label>
-      <select id="fLocation">
-        <option value="">All Locations</option>
-        <option value="GTLC India">GTLC India</option>
-        <option value="GTLC Germany">GTLC Germany</option>
-        <option value="GTLC China">GTLC China</option>
-        <option value="GTLC Vietnam">GTLC Vietnam</option>
-        <option value="GLOBAL">GLOBAL</option>
-      </select>
-    </div>
-    <div class="filter-group">
-      <label>FOSS Analyst</label>
-      <select id="fAnalyst"><option value="">All Analysts</option></select>
-    </div>
-    <div class="filter-group">
-      <label>Category</label>
-      <select id="fCategory">
-        <option value="">All Categories</option>
-        <option value="On-Demand (SaaS)">On-Demand (SaaS)</option>
-        <option value="On-Mobile Device">On-Mobile Device</option>
-        <option value="On-Premise">On-Premise</option>
-        <option value="Outbound OEM">Outbound OEM</option>
-        <option value="Source Code">Source Code</option>
-      </select>
-    </div>
-    <div class="btn-group">
-      <button class="btn btn-ghost" onclick="clearFilters()">Clear</button>
-    </div>
+    <div class="filter-group search-box"><label>Search Program</label><input type="text" id="fSearch" placeholder="Type program name..." /></div>
+    <div class="filter-group"><label>State</label>
+      <select id="fState"><option value="">All States</option><option>In Progress</option><option>Backlog</option><option>Done</option><option>Cancelled</option></select></div>
+    <div class="filter-group"><label>Priority</label>
+      <select id="fPriority"><option value="">All Priorities</option><option value="P1">P1 - Critical</option><option value="P2">P2 - High</option><option value="P3">P3 - Normal</option></select></div>
+    <div class="filter-group"><label>Location</label>
+      <select id="fLocation"><option value="">All Locations</option><option>GTLC India</option><option>GTLC Germany</option><option>GTLC China</option><option>GTLC Vietnam</option><option>GLOBAL</option></select></div>
+    <div class="filter-group"><label>FOSS Analyst</label><select id="fAnalyst"><option value="">All Analysts</option></select></div>
+    <div class="filter-group"><label>Category</label>
+      <select id="fCategory"><option value="">All Categories</option><option>On-Demand (SaaS)</option><option>On-Mobile Device</option><option>On-Premise</option><option>Outbound OEM</option><option>Source Code</option></select></div>
+    <div class="btn-group"><button class="btn btn-ghost" onclick="clearFilters()">Clear</button></div>
   </div>
 
-  <!-- ─── DATE FILTER: COMPLETED SCANS ─── -->
+  <!-- Date / completion panel -->
   <div class="panel" style="margin-bottom:18px">
-    <div class="panel-head">
-      <div class="section-title"><span></span>Completed Scans by Date</div>
-    </div>
-    <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; margin-bottom:16px;">
-      <div class="filter-group">
-        <label>From Date</label>
-        <input type="date" id="dateFrom" />
-      </div>
-      <div class="filter-group">
-        <label>To Date</label>
-        <input type="date" id="dateTo" />
-      </div>
-      <div class="filter-group">
-        <label>Quick Range</label>
+    <div class="panel-head"><div class="section-title"><span></span>Completed Scans by Date</div></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-bottom:16px;">
+      <div class="filter-group"><label>From Date</label><input type="date" id="dateFrom" /></div>
+      <div class="filter-group"><label>To Date</label>  <input type="date" id="dateTo"   /></div>
+      <div class="filter-group"><label>Quick Range</label>
         <select id="quickRange" onchange="applyQuickRange()">
-          <option value="">Custom</option>
-          <option value="7">Last 7 days</option>
-          <option value="30">Last 30 days</option>
-          <option value="90">Last 90 days</option>
-          <option value="mtd">Month to date</option>
-          <option value="ytd">Year to date</option>
-          <option value="all">All time</option>
-        </select>
-      </div>
+          <option value="">Custom</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option>
+          <option value="90">Last 90 days</option><option value="mtd">Month to date</option>
+          <option value="ytd">Year to date</option><option value="all">All time</option>
+        </select></div>
       <div class="btn-group">
         <button class="btn btn-primary" onclick="applyDateFilter()">Apply</button>
-        <button class="btn btn-ghost" onclick="clearDateFilter()">Clear</button>
+        <button class="btn btn-ghost"   onclick="clearDateFilter()">Clear</button>
       </div>
     </div>
-
-    <!-- count stats -->
     <div class="date-count-row" id="dateCountRow">
-      <div class="date-count-stat">
-        <div class="big" id="dcTotal">—</div>
-        <div class="lbl">Scans Completed</div>
-      </div>
+      <div class="date-count-stat"><div class="big" id="dcTotal">-</div><div class="lbl">Scans Completed</div></div>
       <div class="date-divider"></div>
       <div class="date-breakdown" id="dcBreakdown"></div>
     </div>
-
-    <!-- bar chart of completions -->
-    <div id="dailyChartWrap" style="margin-top:16px; display:none;">
+    <div id="dailyChartWrap" style="margin-top:16px;display:none;">
       <div class="section-title" style="margin-bottom:8px;"><span></span>Daily Completions</div>
       <div class="daily-chart" id="dailyChart"></div>
     </div>
   </div>
 
-  <!-- ─── TWO-COL: In-Progress + Charts ─── -->
+  <!-- Main table -->
+  <div class="panel" style="margin-bottom:18px">
+    <div class="panel-head"><div class="section-title"><span></span>Scan Records</div><span class="count-pill" id="tableCount">0 rows</span></div>
+    <div class="tbl-wrap">
+      <table id="mainTable">
+        <thead><tr>
+          <th data-col="program"          onclick="sortTable('program')">Program <em class="si"></em></th>
+          <th data-col="state"            onclick="sortTable('state')">State <em class="si"></em></th>
+          <th data-col="priority"         onclick="sortTable('priority')">Pri <em class="si"></em></th>
+          <th data-col="location"         onclick="sortTable('location')">Location <em class="si"></em></th>
+          <th data-col="foss_analyst"     onclick="sortTable('foss_analyst')">Analyst <em class="si"></em></th>
+          <th data-col="assigned"         onclick="sortTable('assigned')">Assigned <em class="si"></em></th>
+          <th data-col="end_dev"          onclick="sortTable('end_dev')">End Dev <em class="si"></em></th>
+          <th data-col="closed"           onclick="sortTable('closed')">Closed <em class="si"></em></th>
+          <th data-col="program_category" onclick="sortTable('program_category')">Category <em class="si"></em></th>
+          <th data-col="tracking_status"  onclick="sortTable('tracking_status')">Ticket <em class="si"></em></th>
+        </tr></thead>
+        <tbody id="mainTbody"></tbody>
+      </table>
+      <div class="empty" id="emptyMsg" style="display:none;">No records match the current filters.</div>
+    </div>
+    <div class="pager">
+      <span id="pageInfo">-</span>
+      <button id="prevBtn" onclick="changePage(-1)">&#8249; Prev</button>
+      <button id="nextBtn" onclick="changePage(1)">Next &#8250;</button>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="two-col">
+    <div class="panel"><div class="section-title"><span></span>By Location</div><div class="bar-list" id="locChart"></div></div>
+    <div class="panel"><div class="section-title"><span></span>By FOSS Analyst (In Progress)</div><div class="bar-list" id="analystChart"></div></div>
+  </div>
+
+</div><!-- /main overview -->
+</div><!-- /tab-overview -->
+
+<!-- ══════════════ TAB 2 : SLA ANALYSIS ══════════════ -->
+<div id="tab-sla" class="tab-pane">
+<div class="main">
+
+  <!-- SLA KPI row -->
+  <div class="kpi-row">
+    <div class="kpi within"> <div class="kpi-label">Within SLA</div>   <div class="kpi-num" id="sKpiWithin">-</div>  <div class="kpi-sub">Closed on / before SLA</div></div>
+    <div class="kpi breach"> <div class="kpi-label">Breached SLA</div> <div class="kpi-num" id="sKpiBreach">-</div>  <div class="kpi-sub">Closed after SLA</div></div>
+    <div class="kpi nodata"> <div class="kpi-label">No SLA Data</div>  <div class="kpi-num" id="sKpiNoData">-</div>  <div class="kpi-sub">No close date / formula</div></div>
+    <div class="kpi avg">    <div class="kpi-label">Avg Days (Within)</div><div class="kpi-num" id="sKpiAvgW">-</div><div class="kpi-sub">Days before SLA deadline</div></div>
+    <div class="kpi breach"> <div class="kpi-label">Avg Overdue</div>  <div class="kpi-num" id="sKpiAvgB">-</div>    <div class="kpi-sub">Avg days past SLA</div></div>
+  </div>
+
+  <!-- SLA Filters -->
+  <div class="filters-bar">
+    <div class="filter-group search-box"><label>Search Program</label><input type="text" id="sfSearch" placeholder="Type program name..." /></div>
+    <div class="filter-group"><label>SLA Status</label>
+      <select id="sfSLA">
+        <option value="">All</option>
+        <option value="within">Within SLA</option>
+        <option value="breach">Breached SLA</option>
+        <option value="nodata">No Data</option>
+      </select></div>
+    <div class="filter-group"><label>Comment Reason</label>
+      <select id="sfComment">
+        <option value="">All Reasons</option>
+        <option value="Delay From Dev">Delay From Dev</option>
+        <option value="Resource Constraints">Resource Constraints</option>
+        <option value="Dev Team Skipped This Release">Dev Team Skipped This Release</option>
+        <option value="No Longer Delivered">No Longer Delivered</option>
+        <option value="(no comment)">(No Comment)</option>
+      </select></div>
+    <div class="filter-group"><label>Location</label>
+      <select id="sfLoc"><option value="">All Locations</option><option>GTLC India</option><option>GTLC Germany</option><option>GTLC China</option><option>GTLC Vietnam</option><option>GLOBAL</option></select></div>
+    <div class="filter-group"><label>Priority</label>
+      <select id="sfPri"><option value="">All</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option></select></div>
+    <div class="filter-group"><label>FOSS Analyst</label><select id="sfAnalyst"><option value="">All Analysts</option></select></div>
+    <div class="btn-group"><button class="btn btn-ghost" onclick="clearSLAFilters()">Clear</button></div>
+  </div>
+
+  <!-- Charts row -->
   <div class="two-col">
 
-    <!-- In-Progress Scan Table -->
-    <div class="panel" style="grid-column: 1 / -1;">
-      <div class="panel-head">
-        <div class="section-title"><span></span>Scan Records</div>
-        <span class="count-pill" id="tableCount">0 rows</span>
+    <!-- SLA by comment reason (stacked within vs breached) -->
+    <div class="panel">
+      <div class="section-title"><span></span>SLA Status by Comment Reason</div>
+      <div id="slaReasonChart"></div>
+      <div style="display:flex;gap:16px;margin-top:10px;font-size:12px;">
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#22c55e;border-radius:3px;display:inline-block;"></span>Within SLA</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#ef4444;border-radius:3px;display:inline-block;"></span>Breached</span>
       </div>
-      <div class="tbl-wrap">
-        <table id="mainTable">
-          <thead>
-            <tr>
-              <th data-col="program"   onclick="sortTable('program')">Program <em class="sort-icon"></em></th>
-              <th data-col="state"     onclick="sortTable('state')">State <em class="sort-icon"></em></th>
-              <th data-col="priority"  onclick="sortTable('priority')">Pri <em class="sort-icon"></em></th>
-              <th data-col="location"  onclick="sortTable('location')">Location <em class="sort-icon"></em></th>
-              <th data-col="foss_analyst" onclick="sortTable('foss_analyst')">Analyst <em class="sort-icon"></em></th>
-              <th data-col="assigned"  onclick="sortTable('assigned')">Assigned <em class="sort-icon"></em></th>
-              <th data-col="end_dev"   onclick="sortTable('end_dev')">End Dev <em class="sort-icon"></em></th>
-              <th data-col="closed"    onclick="sortTable('closed')">Closed <em class="sort-icon"></em></th>
-              <th data-col="program_category" onclick="sortTable('program_category')">Category <em class="sort-icon"></em></th>
-              <th data-col="tracking_status"  onclick="sortTable('tracking_status')">Ticket <em class="sort-icon"></em></th>
-            </tr>
-          </thead>
-          <tbody id="mainTbody"></tbody>
-        </table>
-        <div class="empty" id="emptyMsg" style="display:none;">No records match the current filters.</div>
-      </div>
-      <div class="pager">
-        <span id="pageInfo">—</span>
-        <button id="prevBtn" onclick="changePage(-1)">‹ Prev</button>
-        <button id="nextBtn" onclick="changePage(1)">Next ›</button>
+    </div>
+
+    <!-- SLA by location (stacked) -->
+    <div class="panel">
+      <div class="section-title"><span></span>SLA Status by Location</div>
+      <div id="slaLocChart"></div>
+      <div style="display:flex;gap:16px;margin-top:10px;font-size:12px;">
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#22c55e;border-radius:3px;display:inline-block;"></span>Within SLA</span>
+        <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#ef4444;border-radius:3px;display:inline-block;"></span>Breached</span>
       </div>
     </div>
   </div>
 
-  <!-- ─── SECOND ROW: charts ─── -->
-  <div class="two-col">
-    <div class="panel">
-      <div class="section-title"><span></span>By Location</div>
-      <div class="bar-list" id="locChart"></div>
+  <!-- SLA detail table -->
+  <div class="panel" style="margin-bottom:18px">
+    <div class="panel-head">
+      <div class="section-title"><span></span>SLA Detail Records</div>
+      <span class="count-pill" id="sTableCount">0 rows</span>
     </div>
-    <div class="panel">
-      <div class="section-title"><span></span>By FOSS Analyst (In Progress)</div>
-      <div class="bar-list" id="analystChart"></div>
+    <div class="tbl-wrap">
+      <table id="slaTable">
+        <thead><tr>
+          <th data-col="program"   onclick="sortSLA('program')">Program <em class="si"></em></th>
+          <th data-col="sla_days"  onclick="sortSLA('sla_days')">SLA Days <em class="si"></em></th>
+          <th data-col="sla_stat"  onclick="sortSLA('sla_stat')">Status <em class="si"></em></th>
+          <th data-col="comments"  onclick="sortSLA('comments')">Comment Reason <em class="si"></em></th>
+          <th data-col="location"  onclick="sortSLA('location')">Location <em class="si"></em></th>
+          <th data-col="foss_analyst" onclick="sortSLA('foss_analyst')">Analyst <em class="si"></em></th>
+          <th data-col="priority"  onclick="sortSLA('priority')">Pri <em class="si"></em></th>
+          <th data-col="closed"    onclick="sortSLA('closed')">Closed Date <em class="si"></em></th>
+          <th data-col="end_dev"   onclick="sortSLA('end_dev')">End Dev <em class="si"></em></th>
+          <th data-col="state"     onclick="sortSLA('state')">State <em class="si"></em></th>
+        </tr></thead>
+        <tbody id="slaTbody"></tbody>
+      </table>
+      <div class="empty" id="slaEmpty" style="display:none;">No records match the current filters.</div>
+    </div>
+    <div class="pager">
+      <span id="sPageInfo">-</span>
+      <button id="sPrevBtn" onclick="changeSLAPage(-1)">&#8249; Prev</button>
+      <button id="sNextBtn" onclick="changeSLAPage(1)">Next &#8250;</button>
     </div>
   </div>
 
-</div><!-- /main -->
+  <!-- SLA by analyst chart -->
+  <div class="panel" style="margin-bottom:18px">
+    <div class="section-title"><span></span>SLA Status by FOSS Analyst</div>
+    <div id="slaAnalystChart"></div>
+    <div style="display:flex;gap:16px;margin-top:10px;font-size:12px;">
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#22c55e;border-radius:3px;display:inline-block;"></span>Within SLA</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#ef4444;border-radius:3px;display:inline-block;"></span>Breached</span>
+    </div>
+  </div>
 
-<!-- ─── DATA + LOGIC ─── -->
+</div><!-- /main sla -->
+</div><!-- /tab-sla -->
+
+<!-- ── SCRIPT ── -->
 <script>
-// ── Inline data (generated from Excel) ──────────────────────────────────────
 let ALL_DATA = [];
 
-// Load from JSON file via fetch (works when served via local server)
-// or use inline data fallback
 async function loadData() {
   try {
-    const resp = await fetch('scan_data.json');
-    if (!resp.ok) throw new Error('fetch failed');
-    ALL_DATA = await resp.json();
+    const r = await fetch('scan_data.json');
+    if (!r.ok) throw new Error('fetch failed');
+    ALL_DATA = await r.json();
   } catch(e) {
-    console.warn('Could not load scan_data.json, using empty dataset:', e.message);
+    console.warn('Could not load scan_data.json:', e.message);
     ALL_DATA = [];
   }
   init();
 }
 
-// ── State ────────────────────────────────────────────────────────────────────
-let filtered    = [];
-let sortCol     = 'end_dev';
-let sortDir     = 'asc';
-let page        = 1;
-const PAGE_SIZE = 50;
-let dateFrom    = null;
-let dateTo      = null;
+/* ────────── Tab switching ────────── */
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}
 
-// ── Init ─────────────────────────────────────────────────────────────────────
+/* ────────── Global state ────────── */
+let filtered = [], sortCol = 'end_dev', sortDir = 'asc', page = 1;
+let slaFiltered = [], sSortCol = 'sla_days', sSortDir = 'asc', sPage = 1;
+const PAGE = 50;
+
+/* ────────── Init ────────── */
 function init() {
-  populateAnalystDropdown();
-  applyFilters();
-  document.getElementById('fSearch').addEventListener('input', debounce(applyFilters, 200));
-  document.getElementById('fState').addEventListener('change', applyFilters);
-  document.getElementById('fPriority').addEventListener('change', applyFilters);
-  document.getElementById('fLocation').addEventListener('change', applyFilters);
-  document.getElementById('fAnalyst').addEventListener('change', applyFilters);
-  document.getElementById('fCategory').addEventListener('change', applyFilters);
-}
-
-function populateAnalystDropdown() {
+  // Populate analyst dropdowns
   const analysts = [...new Set(ALL_DATA.map(r => r.foss_analyst).filter(Boolean))].sort();
-  const sel = document.getElementById('fAnalyst');
-  analysts.forEach(a => {
-    const opt = document.createElement('option');
-    opt.value = a; opt.textContent = a;
-    sel.appendChild(opt);
+  ['fAnalyst','sfAnalyst'].forEach(id => {
+    const sel = document.getElementById(id);
+    analysts.forEach(a => { const o = document.createElement('option'); o.value = o.textContent = a; sel.appendChild(o); });
   });
+
+  // Overview listeners
+  document.getElementById('fSearch').addEventListener('input', debounce(applyFilters, 200));
+  ['fState','fPriority','fLocation','fAnalyst','fCategory'].forEach(id =>
+    document.getElementById(id).addEventListener('change', applyFilters));
+
+  // SLA listeners
+  document.getElementById('sfSearch').addEventListener('input', debounce(applySLAFilters, 200));
+  ['sfSLA','sfComment','sfLoc','sfPri','sfAnalyst'].forEach(id =>
+    document.getElementById(id).addEventListener('change', applySLAFilters));
+
+  applyFilters();
+  applySLAFilters();
+  document.getElementById('totalBadge').textContent = ALL_DATA.length + ' Total';
 }
 
-// ── Filters ───────────────────────────────────────────────────────────────────
+/* ══════════ OVERVIEW TAB ══════════ */
+
 function applyFilters() {
-  const search   = document.getElementById('fSearch').value.toLowerCase();
-  const state    = document.getElementById('fState').value;
-  const priority = document.getElementById('fPriority').value;
-  const location = document.getElementById('fLocation').value;
-  const analyst  = document.getElementById('fAnalyst').value;
-  const category = document.getElementById('fCategory').value;
-
-  filtered = ALL_DATA.filter(r => {
-    if (search   && !r.program.toLowerCase().includes(search)) return false;
-    if (state    && r.state    !== state)    return false;
-    if (priority && r.priority !== priority) return false;
-    if (location && r.location !== location) return false;
-    if (analyst  && r.foss_analyst !== analyst) return false;
-    if (category && r.program_category !== category) return false;
-    return true;
-  });
-
-  page = 1;
-  sortData();
-  renderKPIs();
-  renderTable();
-  renderLocChart();
-  renderAnalystChart();
-  document.getElementById('totalBadge').textContent   = ALL_DATA.length + ' Total';
+  const s = v(id => document.getElementById(id).value, 'fSearch').toLowerCase();
+  const [state, pri, loc, ana, cat] = ['fState','fPriority','fLocation','fAnalyst','fCategory'].map(id => document.getElementById(id).value);
+  filtered = ALL_DATA.filter(r =>
+    (!s   || r.program.toLowerCase().includes(s)) &&
+    (!state|| r.state === state) &&
+    (!pri  || r.priority === pri) &&
+    (!loc  || r.location === loc) &&
+    (!ana  || r.foss_analyst === ana) &&
+    (!cat  || r.program_category === cat)
+  );
+  page = 1; sortData(); renderKPIs(); renderTable(); renderLocChart(); renderAnalystChart();
   document.getElementById('filteredBadge').textContent = filtered.length + ' Showing';
 }
+function v(fn, id) { return document.getElementById(id).value; }
 
 function clearFilters() {
-  ['fSearch','fState','fPriority','fLocation','fAnalyst','fCategory'].forEach(id => {
-    const el = document.getElementById(id);
-    el.value = '';
-  });
+  ['fSearch','fState','fPriority','fLocation','fAnalyst','fCategory'].forEach(id => document.getElementById(id).value = '');
   applyFilters();
 }
 
-// ── Sorting ───────────────────────────────────────────────────────────────────
 function sortTable(col) {
-  if (sortCol === col) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-  else { sortCol = col; sortDir = 'asc'; }
-  document.querySelectorAll('thead th').forEach(th => {
-    th.classList.remove('asc','desc');
-    if (th.dataset.col === col) th.classList.add(sortDir);
-  });
-  sortData();
-  page = 1;
-  renderTable();
+  sSortHelper(col, 'sortCol', 'sortDir', '#mainTable thead th');
+  sortData(); page = 1; renderTable();
 }
-
 function sortData() {
-  filtered.sort((a, b) => {
-    let av = a[sortCol] || '', bv = b[sortCol] || '';
-    if (av < bv) return sortDir === 'asc' ? -1 : 1;
-    if (av > bv) return sortDir === 'asc' ?  1 : -1;
-    return 0;
-  });
+  filtered.sort((a,b) => { const av=a[sortCol]||'', bv=b[sortCol]||''; return sortDir==='asc'?(av<bv?-1:av>bv?1:0):(av>bv?-1:av<bv?1:0); });
 }
 
-// ── KPIs ─────────────────────────────────────────────────────────────────────
 function renderKPIs() {
-  const total   = filtered.length;
-  const inprog  = filtered.filter(r => r.state === 'In Progress').length;
-  const done    = filtered.filter(r => r.state === 'Done').length;
-  const backlog = filtered.filter(r => r.state === 'Backlog').length;
-  const cancel  = filtered.filter(r => r.state === 'Cancelled').length;
-  document.getElementById('kpiTotal').textContent   = total;
-  document.getElementById('kpiInProg').textContent  = inprog;
-  document.getElementById('kpiDone').textContent    = done;
-  document.getElementById('kpiBacklog').textContent = backlog;
-  document.getElementById('kpiCancel').textContent  = cancel;
-}
-
-// ── Table ─────────────────────────────────────────────────────────────────────
-function statTag(s) {
-  const map = {'In Progress':'tag-inprog','Done':'tag-done','Backlog':'tag-backlog','Cancelled':'tag-cancel'};
-  return `<span class="tag ${map[s]||''}">${s}</span>`;
-}
-function priTag(p) {
-  const map = {'P1':'tag-p1','P2':'tag-p2','P3':'tag-p3'};
-  return `<span class="tag ${map[p]||''}">${p||'—'}</span>`;
-}
-function locTag(l) {
-  return l ? `<span class="tag tag-loc">${l}</span>` : '—';
+  set('kpiTotal',   filtered.length);
+  set('kpiInProg',  filtered.filter(r=>r.state==='In Progress').length);
+  set('kpiDone',    filtered.filter(r=>r.state==='Done').length);
+  set('kpiBacklog', filtered.filter(r=>r.state==='Backlog').length);
+  set('kpiCancel',  filtered.filter(r=>r.state==='Cancelled').length);
 }
 
 function renderTable() {
-  const tbody = document.getElementById('mainTbody');
-  const empty = document.getElementById('emptyMsg');
-  const total = filtered.length;
-  const pages = Math.ceil(total / PAGE_SIZE) || 1;
-  if (page > pages) page = pages;
-
-  document.getElementById('tableCount').textContent = total + ' rows';
-  document.getElementById('pageInfo').textContent   = `Page ${page} of ${pages}`;
-  document.getElementById('prevBtn').disabled = page <= 1;
-  document.getElementById('nextBtn').disabled = page >= pages;
-
-  if (!total) {
-    tbody.innerHTML = '';
-    empty.style.display = '';
-    return;
-  }
-  empty.style.display = 'none';
-
-  const slice = filtered.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
-  tbody.innerHTML = slice.map(r => `
-    <tr>
-      <td class="wrap">${esc(r.program)}</td>
-      <td>${statTag(r.state)}</td>
-      <td>${priTag(r.priority)}</td>
-      <td>${locTag(r.location)}</td>
-      <td>${esc(r.foss_analyst)||'—'}</td>
-      <td>${r.assigned||'—'}</td>
-      <td>${r.end_dev||'—'}</td>
-      <td>${r.closed||'—'}</td>
-      <td>${esc(r.program_category)||'—'}</td>
-      <td>${r.tracking_status||'—'}</td>
-    </tr>`).join('');
+  const tbody = ge('mainTbody'), empty = ge('emptyMsg'), total = filtered.length;
+  const pages = Math.ceil(total/PAGE)||1;
+  if (page>pages) page=pages;
+  set('tableCount', total+' rows'); set('pageInfo',`Page ${page} of ${pages}`);
+  ge('prevBtn').disabled = page<=1; ge('nextBtn').disabled = page>=pages;
+  if (!total) { tbody.innerHTML=''; empty.style.display=''; return; }
+  empty.style.display='none';
+  tbody.innerHTML = filtered.slice((page-1)*PAGE, page*PAGE).map(r => `<tr>
+    <td class="wrap">${esc(r.program)}</td>
+    <td>${stateTag(r.state)}</td><td>${priTag(r.priority)}</td><td>${locTag(r.location)}</td>
+    <td>${esc(r.foss_analyst)||'-'}</td><td>${r.assigned||'-'}</td><td>${r.end_dev||'-'}</td>
+    <td>${r.closed||'-'}</td><td>${esc(r.program_category)||'-'}</td><td>${r.tracking_status||'-'}</td>
+  </tr>`).join('');
 }
+function changePage(d) { page+=d; renderTable(); ge('tbl-wrap'); document.querySelector('#tab-overview .tbl-wrap').scrollTop=0; }
 
-function changePage(d) {
-  page += d;
-  renderTable();
-  document.querySelector('.tbl-wrap').scrollTop = 0;
-}
-
-// ── Date Filter for Completions ───────────────────────────────────────────────
+/* Date filter */
 function applyQuickRange() {
-  const today = new Date();
-  const qr = document.getElementById('quickRange').value;
-  const fmt = d => d.toISOString().split('T')[0];
-
-  if (!qr || qr === 'custom') {
-    document.getElementById('dateFrom').value = '';
-    document.getElementById('dateTo').value   = '';
-    return;
-  }
-  const to = fmt(today);
+  const today=new Date(), qr=ge('quickRange').value, fmt=d=>d.toISOString().split('T')[0], to=fmt(today);
+  if(!qr||qr==='custom'){ ge('dateFrom').value=ge('dateTo').value=''; return; }
   let from;
-  if (qr === 'all') {
-    from = '2010-01-01';
-    document.getElementById('dateFrom').value = from;
-    document.getElementById('dateTo').value   = to;
-    applyDateFilter();
-    return;
+  if(qr==='all')      { from='2010-01-01'; }
+  else if(qr==='mtd') { from=fmt(new Date(today.getFullYear(),today.getMonth(),1)); }
+  else if(qr==='ytd') { from=fmt(new Date(today.getFullYear(),0,1)); }
+  else { const d=new Date(today); d.setDate(d.getDate()-parseInt(qr)); from=fmt(d); }
+  ge('dateFrom').value=from; ge('dateTo').value=to; applyDateFilter();
+}
+function applyDateFilter() {
+  const from=ge('dateFrom').value||null, to=ge('dateTo').value||null;
+  const inRange = ALL_DATA.filter(r=>r.state==='Done'&&r.closed&&(!from||r.closed>=from)&&(!to||r.closed<=to));
+  set('dcTotal', inRange.length);
+  const locs={}, lc={'GTLC India':'ind','GTLC Germany':'de','GLOBAL':'glob','GTLC Vietnam':'vn','GTLC China':'cn'};
+  inRange.forEach(r=>{ if(r.location) locs[r.location]=(locs[r.location]||0)+1; });
+  ge('dcBreakdown').innerHTML=Object.entries(locs).sort((a,b)=>b[1]-a[1])
+    .map(([l,c])=>`<div class="db-chip ${lc[l]||''}"><span class="c">${c}</span><span>${l}</span></div>`).join('');
+  renderDailyChart(inRange,from,to);
+}
+function clearDateFilter() {
+  ge('dateFrom').value=ge('dateTo').value=ge('quickRange').value='';
+  set('dcTotal','-'); ge('dcBreakdown').innerHTML=''; ge('dailyChartWrap').style.display='none';
+}
+function renderDailyChart(rows,from,to) {
+  const w=ge('dailyChartWrap'); if(!rows.length){w.style.display='none';return;} w.style.display='';
+  const counts={}; rows.forEach(r=>{counts[r.closed]=(counts[r.closed]||0)+1;});
+  let dates=Object.keys(counts).sort();
+  if(from&&to){
+    const allD=[]; for(let d=new Date(from);d<=new Date(to);d.setDate(d.getDate()+1)) allD.push(d.toISOString().split('T')[0]);
+    dates = allD.length>60 ? dates.filter(d=>counts[d]) : allD;
   }
-  if (qr === 'mtd') {
-    from = fmt(new Date(today.getFullYear(), today.getMonth(), 1));
-  } else if (qr === 'ytd') {
-    from = fmt(new Date(today.getFullYear(), 0, 1));
-  } else {
-    const d = new Date(today);
-    d.setDate(d.getDate() - parseInt(qr));
-    from = fmt(d);
-  }
-  document.getElementById('dateFrom').value = from;
-  document.getElementById('dateTo').value   = to;
-  applyDateFilter();
+  const max=Math.max(...dates.map(d=>counts[d]||0),1);
+  ge('dailyChart').innerHTML=dates.map(d=>{const c=counts[d]||0, h=Math.round(c/max*100);
+    return `<div class="day-col"><div class="day-num">${c||''}</div><div class="day-bar" style="height:${Math.max(h,c?4:0)}px" title="${d}: ${c}"></div><div class="day-lbl">${d.slice(5)}</div></div>`;}).join('');
 }
 
-function applyDateFilter() {
-  dateFrom = document.getElementById('dateFrom').value || null;
-  dateTo   = document.getElementById('dateTo').value   || null;
+const LOC_COLORS={'GTLC India':'#a78bfa','GTLC Germany':'#38bdf8','GLOBAL':'#94a3b8','GTLC Vietnam':'#34d399','GTLC China':'#f87171'};
+function renderLocChart() {
+  const c={}; filtered.forEach(r=>{if(r.location)c[r.location]=(c[r.location]||0)+1;});
+  const e=Object.entries(c).sort((a,b)=>b[1]-a[1]), max=e[0]?.[1]||1;
+  ge('locChart').innerHTML=e.map(([l,n])=>`<div class="bar-item"><div class="bar-label">${l}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(n/max*100)}%;background:${LOC_COLORS[l]||'#4f6ef7'}">${n}</div></div><div class="bar-count">${n}</div></div>`).join('');
+}
+const AC=['#4f6ef7','#7c3aed','#38bdf8','#f97316','#22c55e','#eab308','#ec4899','#14b8a6'];
+function renderAnalystChart() {
+  const ip=filtered.filter(r=>r.state==='In Progress'), c={};
+  ip.forEach(r=>{if(r.foss_analyst)c[r.foss_analyst]=(c[r.foss_analyst]||0)+1;});
+  const e=Object.entries(c).sort((a,b)=>b[1]-a[1]).slice(0,12), max=e[0]?.[1]||1;
+  ge('analystChart').innerHTML=e.map(([a,n],i)=>`<div class="bar-item"><div class="bar-label">${a}</div><div class="bar-track"><div class="bar-fill" style="width:${Math.round(n/max*100)}%;background:${AC[i%AC.length]}">${n}</div></div><div class="bar-count">${n}</div></div>`).join('');
+}
 
-  const source = ALL_DATA.filter(r => r.state === 'Done' && r.closed);
-  const inRange = source.filter(r => {
-    if (dateFrom && r.closed < dateFrom) return false;
-    if (dateTo   && r.closed > dateTo)   return false;
+/* ══════════ SLA TAB ══════════ */
+
+function slaStatus(r) {
+  if (r.sla_days === null || r.sla_days === undefined) return 'nodata';
+  if (r.sla_days > 0)  return 'within';
+  if (r.sla_days < 0)  return 'breach';
+  return 'within'; // 0 = exactly on time = within
+}
+
+function applySLAFilters() {
+  const s   = ge('sfSearch').value.toLowerCase();
+  const sla = ge('sfSLA').value;
+  const cmt = ge('sfComment').value;
+  const loc = ge('sfLoc').value;
+  const pri = ge('sfPri').value;
+  const ana = ge('sfAnalyst').value;
+
+  slaFiltered = ALL_DATA.filter(r => {
+    if (s   && !r.program.toLowerCase().includes(s)) return false;
+    if (loc && r.location !== loc) return false;
+    if (pri && r.priority !== pri) return false;
+    if (ana && r.foss_analyst !== ana) return false;
+    const st = slaStatus(r);
+    if (sla && st !== sla) return false;
+    if (cmt) {
+      const rc = r.comments || '(no comment)';
+      if (cmt === '(no comment)') { if (r.comments) return false; }
+      else if (rc !== cmt) return false;
+    }
     return true;
   });
-
-  document.getElementById('dcTotal').textContent = inRange.length;
-
-  // breakdown by location
-  const locs = {};
-  inRange.forEach(r => { locs[r.location] = (locs[r.location]||0)+1; });
-  const locClass = { 'GTLC India':'ind','GTLC Germany':'de','GLOBAL':'glob','GTLC Vietnam':'vn','GTLC China':'cn' };
-  document.getElementById('dcBreakdown').innerHTML = Object.entries(locs)
-    .sort((a,b)=>b[1]-a[1])
-    .map(([l,c]) => `<div class="db-chip ${locClass[l]||''}"><span class="c">${c}</span> <span>${l}</span></div>`)
-    .join('');
-
-  // daily bar chart
-  renderDailyChart(inRange, dateFrom, dateTo);
+  sPage = 1; sortSLAData();
+  renderSLAKPIs(); renderSLATable(); renderSLAReasonChart(); renderSLALocChart(); renderSLAAnalystChart();
 }
 
-function clearDateFilter() {
-  document.getElementById('dateFrom').value = '';
-  document.getElementById('dateTo').value   = '';
-  document.getElementById('quickRange').value = '';
-  dateFrom = null; dateTo = null;
-  document.getElementById('dcTotal').textContent = '—';
-  document.getElementById('dcBreakdown').innerHTML = '';
-  document.getElementById('dailyChartWrap').style.display = 'none';
+function clearSLAFilters() {
+  ['sfSearch','sfSLA','sfComment','sfLoc','sfPri','sfAnalyst'].forEach(id => ge(id).value='');
+  applySLAFilters();
 }
 
-function renderDailyChart(rows, from, to) {
-  const wrap = document.getElementById('dailyChartWrap');
-  if (!rows.length) { wrap.style.display='none'; return; }
-  wrap.style.display = '';
-
-  // aggregate by date
-  const counts = {};
-  rows.forEach(r => { counts[r.closed] = (counts[r.closed]||0)+1; });
-
-  // fill date range
-  let dates = Object.keys(counts).sort();
-  if (from && to) {
-    const start = new Date(from), end = new Date(to);
-    const allDates = [];
-    for (let d = new Date(start); d <= end; d.setDate(d.getDate()+1)) {
-      allDates.push(d.toISOString().split('T')[0]);
-    }
-    // only show dates with non-zero counts if range is large
-    if (allDates.length > 60) {
-      dates = dates.filter(d => counts[d]);
-    } else {
-      dates = allDates;
-    }
-  }
-
-  const max = Math.max(...dates.map(d => counts[d]||0), 1);
-  const chart = document.getElementById('dailyChart');
-  chart.innerHTML = dates.map(d => {
-    const c = counts[d] || 0;
-    const h = Math.round((c / max) * 100);
-    const label = d.slice(5); // MM-DD
-    return `<div class="day-col" data-tip="${d}: ${c} completed">
-      <div class="day-num">${c||''}</div>
-      <div class="day-bar" style="height:${Math.max(h,c?4:0)}px" title="${d}: ${c} scans"></div>
-      <div class="day-lbl">${label}</div>
-    </div>`;
-  }).join('');
+function sortSLA(col) {
+  sSortHelper(col, 'sSortCol', 'sSortDir', '#slaTable thead th');
+  sortSLAData(); sPage=1; renderSLATable();
+}
+function sortSLAData() {
+  slaFiltered.sort((a,b) => {
+    let av = sSortCol==='sla_days' ? (a.sla_days??-9999) : (a[sSortCol]||'');
+    let bv = sSortCol==='sla_days' ? (b.sla_days??-9999) : (b[sSortCol]||'');
+    return sSortDir==='asc'?(av<bv?-1:av>bv?1:0):(av>bv?-1:av<bv?1:0);
+  });
 }
 
-// ── Bar Charts ────────────────────────────────────────────────────────────────
-const LOC_COLORS = {
-  'GTLC India':   '#a78bfa',
-  'GTLC Germany': '#38bdf8',
-  'GLOBAL':       '#94a3b8',
-  'GTLC Vietnam': '#34d399',
-  'GTLC China':   '#f87171',
+function renderSLAKPIs() {
+  const src = slaFiltered;
+  const within = src.filter(r=>slaStatus(r)==='within');
+  const breach = src.filter(r=>slaStatus(r)==='breach');
+  const nodata = src.filter(r=>slaStatus(r)==='nodata');
+  set('sKpiWithin', within.length);
+  set('sKpiBreach', breach.length);
+  set('sKpiNoData', nodata.length);
+  const avgW = within.length ? Math.round(within.reduce((s,r)=>s+(r.sla_days||0),0)/within.length) : '-';
+  const avgB = breach.length ? Math.round(Math.abs(breach.reduce((s,r)=>s+(r.sla_days||0),0)/breach.length)) : '-';
+  set('sKpiAvgW', avgW);
+  set('sKpiAvgB', avgB);
+}
+
+function renderSLATable() {
+  const tbody=ge('slaTbody'), empty=ge('slaEmpty'), total=slaFiltered.length;
+  const pages=Math.ceil(total/PAGE)||1;
+  if(sPage>pages) sPage=pages;
+  set('sTableCount',total+' rows'); set('sPageInfo',`Page ${sPage} of ${pages}`);
+  ge('sPrevBtn').disabled=sPage<=1; ge('sNextBtn').disabled=sPage>=pages;
+  if(!total){tbody.innerHTML='';empty.style.display='';return;}
+  empty.style.display='none';
+  tbody.innerHTML=slaFiltered.slice((sPage-1)*PAGE,sPage*PAGE).map(r=>{
+    const st=slaStatus(r);
+    const slaCell = r.sla_days===null ? '<span style="color:var(--muted)">-</span>'
+      : `<span style="color:${st==='within'?'#4ade80':'#f87171'};font-weight:700;">${r.sla_days>0?'+':''}${r.sla_days}</span>`;
+    const stTag = st==='within'?'<span class="tag tag-within">Within SLA</span>'
+                : st==='breach'?'<span class="tag tag-breach">Breached</span>'
+                : '<span style="color:var(--muted);font-size:11px;">No Data</span>';
+    const cmtTag = r.comments ? cmtBadge(r.comments) : '<span style="color:var(--muted)">-</span>';
+    return `<tr>
+      <td class="wrap">${esc(r.program)}</td>
+      <td style="text-align:center">${slaCell}</td>
+      <td>${stTag}</td>
+      <td>${cmtTag}</td>
+      <td>${locTag(r.location)}</td>
+      <td>${esc(r.foss_analyst)||'-'}</td>
+      <td>${priTag(r.priority)}</td>
+      <td>${r.closed||'-'}</td>
+      <td>${r.end_dev||'-'}</td>
+      <td>${stateTag(r.state)}</td>
+    </tr>`;}).join('');
+}
+function changeSLAPage(d){sPage+=d;renderSLATable();document.querySelector('#tab-sla .tbl-wrap').scrollTop=0;}
+
+const CMT_COLORS={
+  'Delay From Dev':              '#f97316',
+  'Resource Constraints':        '#eab308',
+  'Dev Team Skipped This Release':'#7c3aed',
+  'No Longer Delivered':         '#64748b',
 };
-
-function renderLocChart() {
-  const counts = {};
-  filtered.forEach(r => { if(r.location) counts[r.location] = (counts[r.location]||0)+1; });
-  const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
-  const max = entries[0]?.[1] || 1;
-  document.getElementById('locChart').innerHTML = entries.map(([l,c]) => `
-    <div class="bar-item">
-      <div class="bar-label">${l}</div>
-      <div class="bar-track">
-        <div class="bar-fill" style="width:${Math.round(c/max*100)}%;background:${LOC_COLORS[l]||'#4f6ef7'}">${c}</div>
-      </div>
-      <div class="bar-count">${c}</div>
-    </div>`).join('');
+function cmtBadge(c){
+  const col=CMT_COLORS[c]||'#64748b';
+  return `<span style="background:${col}22;color:${col};border:1px solid ${col}44;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;">${esc(c)}</span>`;
 }
 
-const ANALYST_COLORS = ['#4f6ef7','#7c3aed','#38bdf8','#f97316','#22c55e','#eab308','#ec4899','#14b8a6'];
-function renderAnalystChart() {
-  const inprog = filtered.filter(r => r.state === 'In Progress');
-  const counts = {};
-  inprog.forEach(r => { if(r.foss_analyst) counts[r.foss_analyst] = (counts[r.foss_analyst]||0)+1; });
-  const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-  const max = entries[0]?.[1] || 1;
-  document.getElementById('analystChart').innerHTML = entries.map(([a,c],i) => `
-    <div class="bar-item">
-      <div class="bar-label">${a}</div>
-      <div class="bar-track">
-        <div class="bar-fill" style="width:${Math.round(c/max*100)}%;background:${ANALYST_COLORS[i%ANALYST_COLORS.length]}">${c}</div>
-      </div>
-      <div class="bar-count">${c}</div>
-    </div>`).join('');
+function stackedBar(w, b, label) {
+  const total = w + b;
+  if (!total) return '';
+  const wp = Math.round(w/total*100), bp = 100-wp;
+  return `<div class="sla-row">
+    <div class="sla-label">${esc(label)}</div>
+    <div class="sla-track">
+      <div class="sla-seg-w" style="width:${wp}%">${w>0?w:''}</div>
+      <div class="sla-seg-b" style="width:${bp}%">${b>0?b:''}</div>
+    </div>
+    <div class="sla-totals">${w}W / ${b}B</div>
+  </div>`;
 }
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-function esc(s) {
-  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
-function debounce(fn, ms) {
-  let t; return (...a) => { clearTimeout(t); t = setTimeout(()=>fn(...a), ms); };
+function renderSLAReasonChart() {
+  const groups={};
+  slaFiltered.forEach(r=>{
+    const key = r.comments || '(No Comment)';
+    if(!groups[key]) groups[key]={w:0,b:0};
+    const st=slaStatus(r);
+    if(st==='within') groups[key].w++; else if(st==='breach') groups[key].b++;
+  });
+  const entries=Object.entries(groups).sort((a,b)=>(b[1].w+b[1].b)-(a[1].w+a[1].b));
+  ge('slaReasonChart').innerHTML = entries.map(([l,{w,b}])=>stackedBar(w,b,l)).join('') || '<div class="empty">No data</div>';
 }
 
-// ── Boot ─────────────────────────────────────────────────────────────────────
+function renderSLALocChart() {
+  const groups={};
+  slaFiltered.forEach(r=>{
+    const key=r.location||'Unknown';
+    if(!groups[key]) groups[key]={w:0,b:0};
+    const st=slaStatus(r);
+    if(st==='within') groups[key].w++; else if(st==='breach') groups[key].b++;
+  });
+  const entries=Object.entries(groups).sort((a,b)=>(b[1].w+b[1].b)-(a[1].w+a[1].b));
+  ge('slaLocChart').innerHTML = entries.map(([l,{w,b}])=>stackedBar(w,b,l)).join('') || '<div class="empty">No data</div>';
+}
+
+function renderSLAAnalystChart() {
+  const groups={};
+  slaFiltered.forEach(r=>{
+    const key=r.foss_analyst||'Unknown';
+    if(!groups[key]) groups[key]={w:0,b:0};
+    const st=slaStatus(r);
+    if(st==='within') groups[key].w++; else if(st==='breach') groups[key].b++;
+  });
+  const entries=Object.entries(groups).sort((a,b)=>(b[1].w+b[1].b)-(a[1].w+a[1].b)).slice(0,15);
+  ge('slaAnalystChart').innerHTML = entries.map(([l,{w,b}])=>stackedBar(w,b,l)).join('') || '<div class="empty">No data</div>';
+}
+
+/* ────────── Shared helpers ────────── */
+function sSortHelper(col, colVar, dirVar, thSel) {
+  if (window[colVar]===col) window[dirVar]=window[dirVar]==='asc'?'desc':'asc';
+  else { window[colVar]=col; window[dirVar]='asc'; }
+  document.querySelectorAll(thSel).forEach(th=>{
+    th.classList.remove('asc','desc');
+    if(th.dataset.col===col) th.classList.add(window[dirVar]);
+  });
+}
+function stateTag(s){const m={'In Progress':'tag-inprog','Done':'tag-done','Backlog':'tag-backlog','Cancelled':'tag-cancel'};return`<span class="tag ${m[s]||''}">${s||'-'}</span>`;}
+function priTag(p){const m={'P1':'tag-p1','P2':'tag-p2','P3':'tag-p3'};return`<span class="tag ${m[p]||''}">${p||'-'}</span>`;}
+function locTag(l){return l?`<span class="tag tag-loc">${l}</span>`:'-';}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function debounce(fn,ms){let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms);};}
+function ge(id){return document.getElementById(id);}
+function set(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
+
+/* expose sort state as window vars */
+window.sortCol='end_dev'; window.sortDir='asc';
+window.sSortCol='sla_days'; window.sSortDir='asc';
+
 loadData();
 </script>
 </body>
