@@ -22,9 +22,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I762314",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "SAP Cloud Appliance Library 4.60",
@@ -49,9 +50,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Cloud Appliance Library 4.61",
@@ -76,9 +78,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Cloud Appliance Library 4.62",
@@ -103,9 +106,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Cloud Appliance Library 4.63",
@@ -130,9 +134,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 09/2026",
@@ -157,9 +162,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -10,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 09/2026",
@@ -184,9 +190,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -10,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.17",
@@ -211,9 +218,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - Sep",
@@ -238,9 +246,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026 - Sep",
@@ -265,9 +274,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "IBP 2611 - Beta Release",
@@ -292,9 +302,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I541859",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -13,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605Bb(T2026.27)",
@@ -319,9 +330,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2609a",
@@ -346,9 +358,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "No longer delivered",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "No Longer Delivered"
   },
   {
     "program": "LaMaRT 2026.18",
@@ -373,9 +386,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.64",
@@ -400,9 +414,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.19",
@@ -427,9 +442,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2609",
@@ -454,9 +470,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - Oct",
@@ -481,9 +498,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026 - Oct",
@@ -508,9 +526,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 10/2026",
@@ -535,9 +554,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 10/2026",
@@ -562,9 +582,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605Bb(T2026.27)",
@@ -589,9 +610,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.20",
@@ -616,9 +638,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.65",
@@ -643,9 +666,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.21",
@@ -670,9 +694,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2610",
@@ -697,9 +722,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - Nov",
@@ -724,9 +750,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026 - Nov",
@@ -751,9 +778,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605Bb(T2026.27)",
@@ -778,9 +806,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.22",
@@ -805,9 +834,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.66",
@@ -832,9 +862,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.23",
@@ -859,9 +890,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 11/2026",
@@ -886,9 +918,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 11/2026",
@@ -913,9 +946,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - Dec",
@@ -940,9 +974,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026 - Dec",
@@ -967,9 +1002,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2611",
@@ -994,9 +1030,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.24",
@@ -1021,9 +1058,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.67",
@@ -1048,9 +1086,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2612",
@@ -1075,9 +1114,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 01/2027",
@@ -1102,9 +1142,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 01/2027",
@@ -1129,9 +1170,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2613",
@@ -1156,9 +1198,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 02/2027",
@@ -1183,9 +1226,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 02/2027",
@@ -1210,9 +1254,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 04/2027",
@@ -1237,9 +1282,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 04/2027",
@@ -1264,9 +1310,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "304969951_CSD_BAnst_PT_Pensionsverwaltung",
@@ -1291,9 +1338,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "305734821_AI Supplier Quotation Data_Porsche",
@@ -1318,9 +1366,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "AfDB SAP Cloud Portal",
@@ -1345,9 +1394,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "306198073_CSD_JVUpload_HZL",
@@ -1372,9 +1422,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "306149039_CSD_M-Checks_Migros",
@@ -1399,9 +1450,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "305650509_CSD_Synapxe_NBS2",
@@ -1426,9 +1478,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP MDK TOOLS 1.17",
@@ -1453,9 +1506,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "Joule Work 3.2 iOS",
@@ -1480,9 +1534,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5396309",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Joule Work 3.2 Android",
@@ -1507,9 +1562,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5396309",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.153",
@@ -1534,9 +1590,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.154",
@@ -1561,9 +1618,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.155",
@@ -1588,9 +1646,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP GRC FOR SAP HANA 1.0 SP02",
@@ -1615,9 +1674,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Sybase IQ 16.1 SPS05 PL18",
@@ -1642,9 +1702,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 18,
+    "comments": null
   },
   {
     "program": "Sybase IQ 16.2 SPS00 PL02",
@@ -1669,9 +1730,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 18,
+    "comments": null
   },
   {
     "program": "OS 16.1 SP01 PL00",
@@ -1696,9 +1758,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 34,
+    "comments": null
   },
   {
     "program": "SDK 16.1 Sp01 PL00",
@@ -1723,9 +1786,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 34,
+    "comments": null
   },
   {
     "program": "ASE 16.1 SP01 PL00",
@@ -1750,9 +1814,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SRS 16.1 SP01 PL00",
@@ -1777,9 +1842,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "DDI Add-on R13",
@@ -1804,9 +1870,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": null
   },
   {
     "program": "304969951_CSD_BAnst_PT_Pensionsverwaltung(Initial)",
@@ -1831,9 +1898,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.16",
@@ -1858,9 +1926,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "FS on K8s Delivery 2608b",
@@ -1885,9 +1954,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306034556_CSD_Marathon_Smart_Search_Phase2",
@@ -1912,9 +1982,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Edge Lifecycle Management 1.63",
@@ -1939,9 +2010,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "MDK Windows 4.1",
@@ -1966,9 +2038,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Integration framework for SMEs 1.0 PL20",
@@ -1993,9 +2066,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5396309",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "APIM_EDGE_IC_2608",
@@ -2020,9 +2094,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 18,
+    "comments": null
   },
   {
     "program": "SAP Solution Manager 7.2 FP22",
@@ -2047,9 +2122,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 42,
+    "comments": null
   },
   {
     "program": "NetWeaver 7.50 SP37",
@@ -2074,9 +2150,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "Digital Manufacturing Production Connector 2608",
@@ -2101,9 +2178,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -11,
+    "comments": "Delay From Dev"
   },
   {
     "program": "WalkMe Q3 2026",
@@ -2128,9 +2206,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP UI Logging for S/4HANA 2011 SP08",
@@ -2155,9 +2234,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305012457_CAE_Boehringer_Ingelheim",
@@ -2182,9 +2262,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 16,
+    "comments": null
   },
   {
     "program": "QRO Online Enhancements Release3e",
@@ -2209,9 +2290,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": "Delay From Dev"
   },
   {
     "program": "QRO Online Enhancements Release3e-CF source code",
@@ -2236,9 +2318,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306181513_Sprint 0 T-Systems",
@@ -2263,9 +2346,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Rural Sourcing Management 2607",
@@ -2290,9 +2374,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SDK 16.1 SP00 PL02",
@@ -2317,9 +2402,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Resource Constraints"
   },
   {
     "program": "OS 16.1 SP00 PL02",
@@ -2344,9 +2430,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "I762314",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 35,
+    "comments": "Resource Constraints"
   },
   {
     "program": "ASE 16.1 SP00 PL02",
@@ -2371,9 +2458,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "I758015",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Resource Constraints"
   },
   {
     "program": "SRS 16.1 SP00 PL02",
@@ -2398,9 +2486,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 48,
+    "comments": null
   },
   {
     "program": "SAP Convergent Charging 2025_FPS1",
@@ -2425,9 +2514,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Telco and Utilities Accelerator 2026-02-JDK21",
@@ -2452,9 +2542,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP HANA Cloud Integration,DS 2603 (1.0.11.60)",
@@ -2479,9 +2570,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "TUA SPA 2604-2609 MDG",
@@ -2506,9 +2598,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SRS 16.0 SP03 PL15",
@@ -2533,9 +2626,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "HANA Clients QRC02/2026",
@@ -2560,9 +2654,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ASE 16.0 SP04 PL09",
@@ -2587,9 +2682,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 47,
+    "comments": null
   },
   {
     "program": "SDK 16.0 SP04 PL09",
@@ -2614,9 +2710,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -59,
+    "comments": "Delay From Dev"
   },
   {
     "program": "OS 16.0 SP04 PL09",
@@ -2641,9 +2738,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 34,
+    "comments": null
   },
   {
     "program": "SRS 16.0 SP04 PL09",
@@ -2668,9 +2766,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758015",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 51,
+    "comments": null
   },
   {
     "program": "SAP Convergent Charging 2023_SPS4",
@@ -2695,9 +2794,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Opp_ID_CSD_T-Systems_Call-Off_1",
@@ -2722,9 +2822,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 10.0 FP 2608",
@@ -2749,9 +2850,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -41,
+    "comments": "Delay From Dev"
   },
   {
     "program": "304452459_CSD_Bayer Grower Management_Bayer_AG",
@@ -2776,9 +2878,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -16,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Telco and Utilities Accelerator 2026-Q3 FE",
@@ -2803,9 +2906,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306206575_CAE_yCommerce - Buyout",
@@ -2830,9 +2934,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "304841855_SEQUELLO_Construction_Logistics_Release8",
@@ -2857,9 +2962,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -40,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Data Intelligence 3.3",
@@ -2884,9 +2990,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "I758010",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": "Resource Constraints"
   },
   {
     "program": "B1 10.0 FP 2602",
@@ -2911,9 +3018,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "S/4HANA BKG COMPLEX LOANS 1811 FP14",
@@ -2938,9 +3046,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 22,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305234128_CSD_MABE_Make_to_Market_Binding_Proposal",
@@ -2965,9 +3074,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -21,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305394362_CSD_Prototypes_architecture_Merck_KGaA",
@@ -2992,9 +3102,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 36,
+    "comments": null
   },
   {
     "program": "305995153_CSD_custom AI_KAESER",
@@ -3019,9 +3130,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 18,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305940100_CSD_Marathon_Smart_Search",
@@ -3046,9 +3158,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -63,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305309455_CSD_NSM_Rendicontazione_AI_Ferrovie",
@@ -3073,9 +3186,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 25,
+    "comments": null
   },
   {
     "program": "SAP Cloud Appliance Library 4.53",
@@ -3100,9 +3214,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -16,
+    "comments": null
   },
   {
     "program": "305253600_CSD_BBC_Kodiak",
@@ -3127,9 +3242,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 83,
+    "comments": null
   },
   {
     "program": "SAP Cloud Appliance Library 4.54",
@@ -3154,9 +3270,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -92,
+    "comments": null
   },
   {
     "program": "SAP CNS Mobile & Tablet Apps MDG 2510-2603",
@@ -3181,9 +3298,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -10,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Cloud Appliance Library 4.55",
@@ -3208,9 +3326,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": null
   },
   {
     "program": "305399024_CSD Voucher_MP Book",
@@ -3235,9 +3354,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "306024401_CAE_Invoice_Duplication_ExxonMobil",
@@ -3262,9 +3382,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "K8s Connectivity Proxy (part of S-169)",
@@ -3289,9 +3410,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Cloud Appliance Library 4.56",
@@ -3316,9 +3438,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "Demand Signal Management (DSiM) 3.0 SP06",
@@ -3343,9 +3466,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Joule Desktop EAC",
@@ -3370,9 +3494,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Cloud Appliance Library 4.57",
@@ -3397,9 +3522,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": null
   },
   {
     "program": "SAP MOBILE PLATFORM SMP 10.1",
@@ -3424,9 +3550,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 20,
+    "comments": null
   },
   {
     "program": "305794749_CSD_ADNOC_Autonomous_ERP",
@@ -3451,9 +3578,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Cloud Appliance Library 4.58",
@@ -3478,9 +3606,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "Release 2025",
@@ -3505,9 +3634,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 20,
+    "comments": null
   },
   {
     "program": "ABAP Platform 2025 SP02 (indirect)",
@@ -3532,9 +3662,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Cloud Appliance Library 4.59",
@@ -3559,9 +3690,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "FS-IPW 2.0",
@@ -3586,9 +3718,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": "Y"
+    "maintenance": "Y",
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP HANA Data Warehousing Foundation 2.0 SP07",
@@ -3613,9 +3746,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -9,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Edge Lifecycle Management 1.55",
@@ -3640,9 +3774,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2512",
@@ -3667,9 +3802,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": "Delay From Dev"
   },
   {
     "program": "MDK MCP Server 0.3",
@@ -3694,9 +3830,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2512",
@@ -3721,9 +3858,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "BTP SDK for ADR 2601",
@@ -3748,9 +3886,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP BTP SDK for iOS 2601",
@@ -3775,9 +3914,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -333,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Cloud Appliance Library 4.52",
@@ -3802,9 +3942,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758016",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026",
@@ -3829,9 +3970,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026",
@@ -3856,9 +3998,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development (Node) 2601",
@@ -3883,9 +4026,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2601",
@@ -3910,9 +4054,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "Mercedes-Benz PBK N14",
@@ -3937,9 +4082,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 25,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 02/2026",
@@ -3964,9 +4110,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 02/2026",
@@ -3991,9 +4138,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -362,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2601b",
@@ -4018,9 +4166,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.1(Feb 2026)",
@@ -4045,9 +4194,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 32,
+    "comments": null
   },
   {
     "program": "Complete Android H1 1.1(Feb 2026)",
@@ -4072,9 +4222,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 19,
+    "comments": null
   },
   {
     "program": "SAC iOS 2026.03",
@@ -4099,9 +4250,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SL Toolset 1.0 SPS 46",
@@ -4126,9 +4278,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2513",
@@ -4153,9 +4306,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758015",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Concur Mobile Tencent H1 2026",
@@ -4180,9 +4334,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I748895",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "AddOn LS Suite Release 2602",
@@ -4207,9 +4362,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 24,
+    "comments": null
   },
   {
     "program": "S/4 based Utilities Solutions for Germany-2305 SP8",
@@ -4234,9 +4390,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2602",
@@ -4261,9 +4418,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -13,
+    "comments": null
   },
   {
     "program": "Digital Manufacturing Cloud Edge 2602",
@@ -4288,9 +4446,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": "Resource Constraints"
   },
   {
     "program": "Digital Manufacturing Production Connector 2602",
@@ -4315,9 +4474,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 16,
+    "comments": "Resource Constraints"
   },
   {
     "program": "Edge Lifecycle Management 1.56",
@@ -4342,9 +4502,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "SAP Advanced SQL Migration Tool 3.5.5",
@@ -4369,9 +4530,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "S/4 based UtilitiesSolutions for Germany-2602 SP0",
@@ -4396,9 +4558,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "S4H_2025_FPS1",
@@ -4423,9 +4586,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 49,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2602",
@@ -4450,9 +4614,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -27,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development (Node) 2602(Feb)",
@@ -4477,9 +4642,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -2,
+    "comments": null
   },
   {
     "program": "SAP Customer Checkout point-of-sale 3.0 2601",
@@ -4504,9 +4670,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 32,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026-Feb",
@@ -4531,9 +4698,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - Feb",
@@ -4558,9 +4726,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -351,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2602b",
@@ -4585,9 +4754,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.1(March 2026)",
@@ -4612,9 +4782,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "Complete Android H1 1.1(March 2026)",
@@ -4639,9 +4810,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2601",
@@ -4666,9 +4838,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": "Resource Constraints"
   },
   {
     "program": "SAP JVM 8",
@@ -4693,9 +4866,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385254",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "XS Migration VSC extn 26Q1",
@@ -4720,9 +4894,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 29,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 03/2026",
@@ -4747,9 +4922,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 03/2026",
@@ -4774,9 +4950,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2603a",
@@ -4801,9 +4978,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": null
   },
   {
     "program": "WalkMe Q1 2026 (Winter Release)",
@@ -4828,9 +5006,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP MDK TOOLS 1.15",
@@ -4855,9 +5034,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758014",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2602.1",
@@ -4882,9 +5062,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "SAP Service and Asset Manager - SSAM 2511.1 (2603)",
@@ -4909,9 +5090,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Edge Lifecycle Management 1.57",
@@ -4936,9 +5118,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "305324500_CSD_ACCENTURE_AI_USE_CASES_PHASE_3",
@@ -4963,9 +5146,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - March",
@@ -4990,9 +5174,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026-March",
@@ -5017,9 +5202,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "Complete Android H1 1.1(April 2026)",
@@ -5044,9 +5230,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.1(April 2026)",
@@ -5071,9 +5258,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "Client 26.3",
@@ -5098,9 +5286,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "MDK Web Client 2603",
@@ -5125,9 +5314,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "SAP Mobile Services Client 26.3",
@@ -5152,9 +5342,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385254",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2603",
@@ -5179,9 +5370,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -359,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2603b",
@@ -5206,9 +5398,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I762314",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "MDK/SSAM for Windows 4.0",
@@ -5233,9 +5426,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Logistics Management Mobile 2608",
@@ -5260,9 +5454,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305977011_P66_RISE RINS",
@@ -5287,9 +5482,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "APIM_EDGE_IC_2602",
@@ -5314,9 +5510,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Resource Constraints",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": "Resource Constraints"
   },
   {
     "program": "SAP Customer Checkout point-of-sale 3.0 2602",
@@ -5341,9 +5538,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385256",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -7,
+    "comments": "Delay From Dev"
   },
   {
     "program": "IBP 2605 - Beta Release",
@@ -5368,9 +5566,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I541859",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -13,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Lama Runtime 2026.06",
@@ -5395,9 +5594,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2604",
@@ -5422,9 +5622,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development (Node) 2603",
@@ -5449,9 +5650,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2603",
@@ -5476,9 +5678,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -45,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.58",
@@ -5503,9 +5706,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "SL Toolset 1.0 SPS 47",
@@ -5530,9 +5734,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 04/2026",
@@ -5557,9 +5762,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 04/2026",
@@ -5584,9 +5790,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2604.1",
@@ -5611,9 +5818,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "B1 Sales App for Android 1.0 PL44",
@@ -5638,9 +5846,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 Sales App for iOS 1.1 PL49",
@@ -5665,9 +5874,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Landscape Management Cloud 1.46",
@@ -5692,9 +5902,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP BTP SDK for iOS 2604",
@@ -5719,9 +5930,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Complete Android H1 1.1(May 2026)",
@@ -5746,9 +5958,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.1(May 2026)",
@@ -5773,9 +5986,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - April",
@@ -5800,9 +6014,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026-April",
@@ -5827,9 +6042,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2603",
@@ -5854,9 +6070,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2604b",
@@ -5881,9 +6098,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -366,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Tencent H1 (April)",
@@ -5908,9 +6126,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I748895",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 7,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605 (T2026.19)",
@@ -5935,9 +6154,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "SAC iOS 2026.10",
@@ -5962,9 +6182,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAC Android 2026.10",
@@ -5989,9 +6210,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "LaMaRT 2026.08",
@@ -6016,9 +6238,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.59",
@@ -6043,9 +6266,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "NetWeaver 7.50 SP35",
@@ -6070,9 +6294,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "305974898_CAE RUN_NEO to CF Migration_Iren",
@@ -6097,9 +6322,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "FinProdSubledger 3.5",
@@ -6124,9 +6350,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 Service App for iOS 1.0 PL20",
@@ -6151,9 +6378,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 Service App for Android 1.0 PL14",
@@ -6178,9 +6406,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 7,
+    "comments": "Delay From Dev"
   },
   {
     "program": "FRUN 5.0 FP03",
@@ -6205,9 +6434,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "LaMaRT 2026.09",
@@ -6232,9 +6462,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": null
   },
   {
     "program": "B1 Mobile App for iOS 1.11 PL24",
@@ -6259,9 +6490,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 Mobile App for Android 1.2 PL18",
@@ -6286,9 +6518,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2605",
@@ -6313,9 +6546,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": null
   },
   {
     "program": "SAP Business Client 8.10 (Beta2)",
@@ -6340,9 +6574,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2605",
@@ -6367,9 +6602,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": null
   },
   {
     "program": "Complete Android H1 1.1(June 2026)",
@@ -6394,9 +6630,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.1(June 2026)",
@@ -6421,9 +6658,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - May",
@@ -6448,9 +6686,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026-May",
@@ -6475,9 +6714,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2604",
@@ -6502,9 +6742,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 16,
+    "comments": null
   },
   {
     "program": "ADT in VSCODE 2605 - External Shipment",
@@ -6529,9 +6770,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ABAP CLOUD DEVELOPER TRIAL 2025 ISS",
@@ -6556,9 +6798,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605 (T2026.23)",
@@ -6583,9 +6826,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "306206575_CAE_yCommerce",
@@ -6610,9 +6854,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -11,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ADT in Eclipse 2608",
@@ -6637,9 +6882,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 Analytics 1.2 PL07",
@@ -6664,9 +6910,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "LaMaRT 2026.10",
@@ -6691,9 +6938,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -2,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 05/2026",
@@ -6718,9 +6966,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 05/2026",
@@ -6745,9 +6994,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.60",
@@ -6772,9 +7022,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP MDK TOOLS 1.16",
@@ -6799,9 +7050,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758014",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "XSA Core Runtime 1.5.0 for HANA 2.0 SPS08 (FP)",
@@ -6826,9 +7078,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I556028",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ADT in VSCODE 2608",
@@ -6853,9 +7106,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2605.1",
@@ -6880,9 +7134,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "306009015_CSD_eVorhaben_Kanton_Zurich_1.2",
@@ -6907,9 +7162,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP CP SDK for service development (Node) 2606",
@@ -6934,9 +7190,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2606",
@@ -6961,9 +7218,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.11",
@@ -6988,9 +7246,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "Cloud Runtimes MDG 2606",
@@ -7015,9 +7274,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2606",
@@ -7042,9 +7302,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 15,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2605",
@@ -7069,9 +7330,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - June",
@@ -7096,9 +7358,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026 - June",
@@ -7123,9 +7386,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "Client 26.6",
@@ -7150,9 +7414,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "MDK Web Client 2606",
@@ -7177,9 +7442,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "mdk Editor 2606",
@@ -7204,9 +7470,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605b(T2026.27)",
@@ -7231,9 +7498,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "Complete Android H1 1.1(July 2026)",
@@ -7258,9 +7526,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 15,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.1(July 2026)",
@@ -7285,9 +7554,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 15,
+    "comments": null
   },
   {
     "program": "305895026_CSD_MB_CMH_Mercedes-Benz_CO_Release_2",
@@ -7312,9 +7582,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -2,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Digital Currency Hub MDG 2025.2 & 2026.1",
@@ -7339,9 +7610,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5380106",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": "Delay From Dev"
   },
   {
     "program": "LaMaRT 2026.12",
@@ -7366,9 +7638,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": null
   },
   {
     "program": "SAP Mobile Services Client 26.6",
@@ -7393,9 +7666,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "S4PuC_2608_Q3/2026",
@@ -7420,9 +7694,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 34,
+    "comments": null
   },
   {
     "program": "ABAP Platform Cloud 2608 (indirect)",
@@ -7447,9 +7722,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Business Client 8.10 (GA)",
@@ -7474,9 +7750,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 29,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Edge Lifecycle Management 1.61",
@@ -7501,9 +7778,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H1 2026 - July",
@@ -7528,9 +7806,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H1 2026 - July",
@@ -7555,9 +7834,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "TripIt Mobile iOS 07/2026",
@@ -7582,9 +7862,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": null
   },
   {
     "program": "TripIt Mobile Android 07/2026",
@@ -7609,9 +7890,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": null
   },
   {
     "program": "Complete Android H1 1.2(July 2026)",
@@ -7636,9 +7918,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 3,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2606.1",
@@ -7663,9 +7946,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.13",
@@ -7690,9 +7974,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "Complete iOS H1 1.2(July 2026)",
@@ -7717,9 +8002,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": null
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2607a",
@@ -7744,9 +8030,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -9,
+    "comments": null
   },
   {
     "program": "APIM_EDGE_IC_2606",
@@ -7771,9 +8058,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 24,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2607(T2026.31)",
@@ -7798,9 +8086,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "MDK MCP Server 0.4",
@@ -7825,9 +8114,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305532808_CSD_Adnoc_Call_Off15",
@@ -7852,9 +8142,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Business One Cloud 1.1 PL23",
@@ -7879,9 +8170,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "S/4HANA BKG COMPLEX LOANS 1811 FP15",
@@ -7906,9 +8198,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306330179_CSD_T-Systems_Abruf 01",
@@ -7933,9 +8226,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -3,
+    "comments": "Delay From Dev"
   },
   {
     "program": "LaMaRT 2026.14",
@@ -7960,9 +8254,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "NetWeaver 7.50 SP36",
@@ -7987,9 +8282,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "Edge Lifecycle Management 1.62",
@@ -8014,9 +8310,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -15,
+    "comments": null
   },
   {
     "program": "HDP Deployer - 2026.Q3 - TMSv2 Support",
@@ -8041,9 +8338,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAC iOS 2026.16",
@@ -8068,9 +8366,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306181513_Sprint 0 T-Systems-On mobile",
@@ -8095,9 +8394,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Digital Manufacturing Edge 2608",
@@ -8122,9 +8422,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "LaMaRT 2026.15",
@@ -8149,9 +8450,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP Ariba Mobile iOS 2.1.0",
@@ -8176,9 +8478,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Ariba Mobile Android 2.1.0",
@@ -8203,9 +8506,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SL Toolset for Cloud 2608 (T2026.35)",
@@ -8230,9 +8534,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "APIM_EDGE_IC_2607",
@@ -8257,9 +8562,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -4,
+    "comments": null
   },
   {
     "program": "APIM TCT_3.0.0",
@@ -8284,9 +8590,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 46,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Tencent H2 2026",
@@ -8311,9 +8618,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I748895",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": null
   },
   {
     "program": "SL Toolset for Cloud 2605Bb(T2026.27)",
@@ -8338,9 +8646,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 12,
+    "comments": null
   },
   {
     "program": "SAP BTP SDK for iOS 2608",
@@ -8365,9 +8674,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2608",
@@ -8392,9 +8702,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -51,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development (Node) 2608",
@@ -8419,9 +8730,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -43,
+    "comments": null
   },
   {
     "program": "SL Toolset 1.0 SPS 48",
@@ -8446,9 +8758,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 40,
+    "comments": null
   },
   {
     "program": "MOB SAP Fieldglass Timesheet 1.0",
@@ -8473,9 +8786,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Complete Android H2 2026(Aug 2026)",
@@ -8500,9 +8814,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 7,
+    "comments": null
   },
   {
     "program": "Complete iOS H2 2026(Aug 2026)",
@@ -8527,9 +8842,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile iOS H2 2026 - August",
@@ -8554,9 +8870,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "SAP Concur Mobile Android H2 2026 - August",
@@ -8581,9 +8898,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "305324500_CSD_ACCENTURE_AI_USE_CASES_PHASE_4",
@@ -8608,9 +8926,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 38,
+    "comments": null
   },
   {
     "program": "APIMSDK 3.0.0",
@@ -8635,9 +8954,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 22,
+    "comments": null
   },
   {
     "program": "S4H_2025_FPS2",
@@ -8662,9 +8982,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "VSCode Tools T2512b (Initial Shipment)",
@@ -8689,9 +9010,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": null
   },
   {
     "program": "VSCode Tools T2513b (Initial Shipment)",
@@ -8716,9 +9038,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 30,
+    "comments": null
   },
   {
     "program": "304452459_CSD_Bayer Grower Management_Bayer_AG-Binary",
@@ -8743,9 +9066,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 28,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306010492_CSD_SKF_QuoteAutomation",
@@ -8770,9 +9094,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 54,
+    "comments": null
   },
   {
     "program": "305929011_CSD_SE_DSPC_CORE_ETO_MV",
@@ -8797,9 +9122,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 34,
+    "comments": null
   },
   {
     "program": "306144416_CAE_Build_CRs_to_Commerce_CR4_Daikin",
@@ -8824,9 +9150,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -28,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Ticket-Kategorisierung FACIL",
@@ -8851,9 +9178,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385258",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305907690_CSD_GCC_Automation_of_PE_GCC",
@@ -8878,9 +9206,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -62,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306058750_Invoice Verification",
@@ -8905,9 +9234,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -135,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 RSP 3.2 PL21",
@@ -8932,9 +9262,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385254",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -57,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306073391_Recalculation",
@@ -8959,9 +9290,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -26,
+    "comments": "Delay From Dev"
   },
   {
     "program": "BDC Mobile iOS 2026.17",
@@ -8986,9 +9318,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306018239_CSD_AI Product Suggestions",
@@ -9013,9 +9346,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP BUSINESS DATA CLOUD SDK iOS 2026.17(26.8)",
@@ -9040,9 +9374,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305541364_CSD_Intell.Altern.Component",
@@ -9067,9 +9402,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305883759_Protokollprozess",
@@ -9094,9 +9430,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 7,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306168945_CSD_Cheese Taxation_Migros",
@@ -9121,9 +9458,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306254724_CSD_AI Summary App_Hilti_AG",
@@ -9148,9 +9486,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305487885_CSD_Exxon_DOAG_ExxonMobil",
@@ -9175,9 +9514,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305777779_CustomApps on BTP_TACP",
@@ -9202,9 +9542,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306292400-CSD_RWE_AI-assisted Troubleshoot_MVP_WS1",
@@ -9229,9 +9570,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 105,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305953171_CAE_BTP",
@@ -9256,9 +9598,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAPUI5 1.144",
@@ -9283,9 +9626,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "SAP Mobile Start App 2.6 iOS",
@@ -9310,9 +9654,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP Mobile Start App 2.6 Android",
@@ -9337,9 +9682,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 48,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ByD2602",
@@ -9364,9 +9710,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 83,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.145",
@@ -9391,9 +9738,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 87,
+    "comments": null
   },
   {
     "program": "SAP GRC FOR SAP HANA 1.0 SP00",
@@ -9418,9 +9766,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 108,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAPUI5 1.146",
@@ -9445,9 +9794,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I559269",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 17,
+    "comments": null
   },
   {
     "program": "SAP Business One Cloud 1.1 PL22",
@@ -9472,9 +9822,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 53,
+    "comments": null
   },
   {
     "program": "VSCode Extension 2.0",
@@ -9499,9 +9850,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 20,
+    "comments": null
   },
   {
     "program": "SAP GTS, edition for SAP HANA 2025 SP01",
@@ -9526,9 +9878,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 29,
+    "comments": null
   },
   {
     "program": "305532808_CSD_Adnoc_Call_Off14",
@@ -9553,9 +9906,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "MOB TIMESHEET AND 0.1 - Beta release",
@@ -9580,9 +9934,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": "Delay From Dev"
   },
   {
     "program": "MOB TIMESHEET IOS 0.1 - Beta release",
@@ -9607,9 +9962,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 27,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAPUI5 1.147",
@@ -9634,9 +9990,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "BTP SDK for ADR 2605",
@@ -9661,9 +10018,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -121,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ByD2605",
@@ -9688,9 +10046,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 15,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.148",
@@ -9715,9 +10074,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "Logistics Management Mobile 2608",
@@ -9742,9 +10102,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Joule Work 3.0 iOS",
@@ -9769,9 +10130,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 2,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Joule Work 3.0 Android",
@@ -9796,9 +10158,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 42,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Digital Manufacturing Production Connector 2605",
@@ -9823,9 +10186,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -10,
+    "comments": "Delay From Dev"
   },
   {
     "program": "AddOn LS Suite Release 2605",
@@ -9850,9 +10214,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP GUI FOR WINDOWS 8.10(beta)",
@@ -9877,9 +10242,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAPUI5 1.149",
@@ -9904,9 +10270,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": null
   },
   {
     "program": "SAP Service and Asset Manager - SSAM 2511.2 (2606)",
@@ -9931,9 +10298,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306283005_CSD_Enhancements_Hilti_AG",
@@ -9958,9 +10326,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "306108379_CSD_EOI_Bid_Eval_Hind_Zinc_Ltd",
@@ -9985,9 +10354,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -3,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305963012_Order Insight Assistant",
@@ -10012,9 +10382,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 8,
+    "comments": "Delay From Dev"
   },
   {
     "program": "FSDM 1.27 (FP)",
@@ -10039,9 +10410,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -182,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305929011_CSD_SE_DSPC_GMT_V1",
@@ -10066,9 +10438,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758929",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 7,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Joule Work 3.1 Android",
@@ -10093,9 +10466,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 4,
+    "comments": "Delay From Dev"
   },
   {
     "program": "Joule Work 3.1 iOS",
@@ -10120,9 +10494,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I773708",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.150",
@@ -10147,9 +10522,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 13,
+    "comments": null
   },
   {
     "program": "ByD2608",
@@ -10174,9 +10550,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 20,
+    "comments": null
   },
   {
     "program": "MOB TIMESHEET AND 1.0",
@@ -10201,9 +10578,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 22,
+    "comments": "Delay From Dev"
   },
   {
     "program": "MOB TIMESHEET IOS 1.0",
@@ -10228,9 +10606,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 35,
+    "comments": null
   },
   {
     "program": "SAPUI5 1.151",
@@ -10255,9 +10634,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 9,
+    "comments": null
   },
   {
     "program": "S/4 based UtilitiesSolutions for Germany-2602 SP1",
@@ -10282,9 +10662,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 44,
+    "comments": null
   },
   {
     "program": "BTP SDK for ADR 2608",
@@ -10309,9 +10690,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I757367",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAPUI5 1.152",
@@ -10336,9 +10718,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 7,
+    "comments": null
   },
   {
     "program": "305429245_CAE_APTIV_GLOBAL_OPERATIONS",
@@ -10363,9 +10746,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 108,
+    "comments": "Delay From Dev"
   },
   {
     "program": "UI data protection masking 2.0 FP08",
@@ -10390,9 +10774,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 153,
+    "comments": "Delay From Dev"
   },
   {
     "program": "UI DATA PROTECTION MASKING 1.0 SP03",
@@ -10417,9 +10802,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 153,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ABAP in SAP BTP 2605",
@@ -10444,9 +10830,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP CP SDK for service development (Node) 2605",
@@ -10471,9 +10858,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Dev team skipped this release",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Dev Team Skipped This Release"
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2605",
@@ -10498,9 +10886,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Dev team skipped this release",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Dev Team Skipped This Release"
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2605b",
@@ -10525,9 +10914,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "dev team skipped this release",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Dev Team Skipped This Release"
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2606b",
@@ -10552,9 +10942,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "dev team skipped this release",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Dev Team Skipped This Release"
   },
   {
     "program": "AI Libraries and SDKs MDG 25 2608a",
@@ -10579,9 +10970,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Client 26.9",
@@ -10606,9 +10998,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "SAP Mobile Services Client 26.9",
@@ -10633,9 +11026,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "mdk Editor 2609",
@@ -10660,9 +11054,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "MDK Web Client 2609",
@@ -10687,9 +11082,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 10,
+    "comments": null
   },
   {
     "program": "306281956_CSD_Parcel Solution",
@@ -10714,9 +11110,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I758150",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -5,
+    "comments": "Delay From Dev"
   },
   {
     "program": "ADT in Eclipse 2611",
@@ -10741,9 +11138,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "ADT in VSCODE 2611",
@@ -10768,9 +11166,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I501689",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SSAM 2511.3 (2609)",
@@ -10795,9 +11194,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -20,
+    "comments": "Delay From Dev"
   },
   {
     "program": "305797038_Gen AI Contract Creation",
@@ -10822,9 +11222,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -9,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP PQM OP 2022",
@@ -10849,9 +11250,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": "Y"
+    "maintenance": "Y",
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP PQM OP 2025",
@@ -10876,9 +11278,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": "Y"
+    "maintenance": "Y",
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "FS-PQM 4.0",
@@ -10903,9 +11306,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I758150",
-    "maintenance": "Y"
+    "maintenance": "Y",
+    "sla_days": 11,
+    "comments": null
   },
   {
     "program": "SAP Sports One 1.0 - on Mobile - 2608",
@@ -10930,9 +11334,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 14,
+    "comments": null
   },
   {
     "program": "SAP GUI for Java 8.20 - Beta Release",
@@ -10957,9 +11362,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5396309",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP GUI for Java 8.20",
@@ -10984,9 +11390,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "HANA 2.0 SPS 09",
@@ -11011,9 +11418,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "Global",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP BUSINESS DATA CLOUD SDK AND 2026.23",
@@ -11038,9 +11446,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": "Delay From Dev"
   },
   {
     "program": "B1 10.0 SP 2611",
@@ -11065,9 +11474,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5380108",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -41,
+    "comments": null
   },
   {
     "program": "305736604_CSD_Digitale_Nachrichtenplattform_BPA",
@@ -11092,9 +11502,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "ST-OST 200 SP17",
@@ -11119,9 +11530,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP GTS, edition for SAP HANA 2025 FPS02",
@@ -11146,9 +11558,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 29,
+    "comments": null
   },
   {
     "program": "306287712_CAE_PMJ_AI_MCP",
@@ -11173,9 +11586,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385247",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAC Android 2026.19",
@@ -11200,9 +11614,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -1,
+    "comments": "Delay From Dev"
   },
   {
     "program": "SAP CP SDK for service development NG (Java) 2609",
@@ -11227,9 +11642,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP CP SDK for service development (Node) 2609",
@@ -11254,9 +11670,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385243",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP 3D Visual Enterprise 9 FP31",
@@ -11281,9 +11698,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5390989",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP GTS, edition for SAP HANA 2023 SP08",
@@ -11308,9 +11726,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 29,
+    "comments": null
   },
   {
     "program": "Ticket-Kategorisierung FACIL CR01",
@@ -11335,9 +11754,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385241",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "306410504_CSD_Grower Call Off 06 Sprint0",
@@ -11362,9 +11782,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -62,
+    "comments": null
   },
   {
     "program": "Logistics Management Mobile 2702",
@@ -11389,9 +11810,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5403671",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "Non-UI microservices",
@@ -11416,9 +11838,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": "Y"
+    "maintenance": "Y",
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Convergent Charging 2025_FPS2",
@@ -11443,9 +11866,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": -6,
+    "comments": "Delay From Dev"
   },
   {
     "program": "FRUN 6.0 SP00",
@@ -11470,9 +11894,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5367590",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": 0,
+    "comments": null
   },
   {
     "program": "305677015_CSD_Deutscher_Bundestag",
@@ -11497,9 +11922,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "SAP Customer Checkout point-of-sale 3.0 2607",
@@ -11524,9 +11950,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5385242",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "304570169_CSD_TMR_ADVICE_BUILD RELEASE 1.2",
@@ -11551,9 +11978,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "I540507",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Complete Android H2 2026(Sep 2026)",
@@ -11578,9 +12006,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "Complete iOS H2 2026(Sep 2026)",
@@ -11605,9 +12034,10 @@
     "crown_jewel": "Y",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5381614",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": null
   },
   {
     "program": "305497669_CAE_GTS_Opportunity_Fonterra",
@@ -11632,9 +12062,10 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "Delay from Dev",
     "owner": "C5366020",
-    "maintenance": null
+    "maintenance": null,
+    "sla_days": null,
+    "comments": "Delay From Dev"
   },
   {
     "program": "UI Microservices",
@@ -11659,8 +12090,9 @@
     "crown_jewel": "N",
     "black_duck": "Y",
     "tracking_status": "Open",
-    "comments": "",
     "owner": "C5396309",
-    "maintenance": "Y"
+    "maintenance": "Y",
+    "sla_days": null,
+    "comments": null
   }
 ]
