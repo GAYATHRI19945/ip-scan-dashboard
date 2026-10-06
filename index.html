@@ -334,6 +334,12 @@
     <div class="filter-group"><label>Priority</label>
       <select id="sfPri"><option value="">All</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option></select></div>
     <div class="filter-group"><label>FOSS Analyst</label><select id="sfAnalyst"><option value="">All Analysts</option></select></div>
+    <div class="filter-group"><label>Continuous Scan</label>
+      <select id="sfContinuous">
+        <option value="">All</option>
+        <option value="N" selected>N</option>
+        <option value="Y">Y</option>
+      </select></div>
     <div class="btn-group"><button class="btn btn-ghost" onclick="clearSLAFilters()">Clear</button></div>
   </div>
 
@@ -486,10 +492,14 @@ function init() {
 
   // SLA listeners
   document.getElementById('sfSearch').addEventListener('input', debounce(applySLAFilters, 200));
-  ['sfSLA','sfComment','sfLoc','sfPri','sfAnalyst','sfDateField'].forEach(id =>
+  ['sfSLA','sfComment','sfLoc','sfPri','sfAnalyst','sfDateField','sfContinuous'].forEach(id =>
     document.getElementById(id).addEventListener('change', applySLAFilters));
   ['sfDateFrom','sfDateTo'].forEach(id =>
     document.getElementById(id).addEventListener('change', applySLAFilters));
+
+  // Set SLA tab defaults: Continuous Scan = N, Comment = Resource Constraints
+  ge('sfContinuous').value = 'N';
+  ge('sfComment').value    = 'Resource Constraints';
 
   applyFilters();
   applySLAFilters();
@@ -620,6 +630,7 @@ function applySLAFilters() {
   const loc      = ge('sfLoc').value;
   const pri      = ge('sfPri').value;
   const ana      = ge('sfAnalyst').value;
+  const cont     = ge('sfContinuous').value;
   const dateField= ge('sfDateField').value;
   const dateFrom = ge('sfDateFrom').value || null;
   const dateTo   = ge('sfDateTo').value   || null;
@@ -629,6 +640,7 @@ function applySLAFilters() {
     if (loc && r.location !== loc) return false;
     if (pri && r.priority !== pri) return false;
     if (ana && r.foss_analyst !== ana) return false;
+    if (cont && (r.continuous||'').toUpperCase() !== cont) return false;
     const st = slaStatus(r);
     if (sla && st !== sla) return false;
     if (cmt) {
@@ -665,7 +677,9 @@ function applySLAFilters() {
 }
 
 function clearSLAFilters() {
-  ['sfSearch','sfSLA','sfComment','sfLoc','sfPri','sfAnalyst'].forEach(id => ge(id).value='');
+  ['sfSearch','sfSLA','sfLoc','sfPri','sfAnalyst'].forEach(id => ge(id).value='');
+  ge('sfContinuous').value = 'N';
+  ge('sfComment').value    = 'Resource Constraints';
   clearSLADateRange();
 }
 
